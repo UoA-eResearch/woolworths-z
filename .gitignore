@@ -1,0 +1,3 @@
+# Locally-cached Leaflet vendor files (app uses CDN in production)
+leaflet.css
+leaflet.js
