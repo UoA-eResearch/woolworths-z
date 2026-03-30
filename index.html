@@ -398,23 +398,14 @@ let currentDistM = null;     // route distance in metres (null = no result yet)
 let useDbzIcon   = false;
 
 // ═══════════════════════════════════════════════════════════════════
-// Store Loading (Overpass API → fallback)
+// Store Loading (woolies.json → fallback)
 // ═══════════════════════════════════════════════════════════════════
 
 async function loadStores() {
   setStatus('Loading store locations…');
-  const q = `[out:json][timeout:25];
-(
-  node["shop"="supermarket"]["brand"~"Woolworths|Countdown",i](-47.5,166.3,-34.0,178.5);
-  way["shop"="supermarket"]["brand"~"Woolworths|Countdown",i](-47.5,166.3,-34.0,178.5);
-);
-out center;`;
 
   try {
-    const res = await fetch('https://overpass-api.de/api/interpreter', {
-      method: 'POST',
-      body: 'data=' + encodeURIComponent(q)
-    });
+    const res = await fetch('woolies.json');
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
 
@@ -430,7 +421,7 @@ out center;`;
     stores = loaded;
     setStatus(`${stores.length} stores loaded. Enter your NZ address above.`, 'success');
   } catch (err) {
-    console.warn('Overpass unavailable, using fallback list:', err);
+    console.warn('woolies.json unavailable, using fallback list:', err);
     stores = FALLBACK_STORES.slice();
     setStatus(`${stores.length} stores loaded (offline list). Enter your NZ address above.`, 'success');
   }
