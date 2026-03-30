@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Woolworths NZ Route Finder 🛒</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ── Side Panel ─────────────────────────────────────────── */
+    #panel {
+      width: 330px;
+      min-width: 330px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 18px 16px;
+      overflow-y: auto;
+      box-shadow: 3px 0 14px rgba(0,0,0,0.13);
+      z-index: 1000;
+    }
+
+    #map { flex: 1; }
+
+    h1 {
+      color: #1b6e3e;
+      font-size: 1.2rem;
+      text-align: center;
+      line-height: 1.45;
+    }
+
+    .field-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    #addressInput {
+      width: 100%;
+      padding: 9px 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      transition: border-color 0.2s;
+    }
+    #addressInput:focus { outline: none; border-color: #1b6e3e; }
+
+    #findBtn {
+      width: 100%;
+      padding: 11px;
+      background: #1b6e3e;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+    #findBtn:hover:not(:disabled) { background: #155730; }
+    #findBtn:active:not(:disabled) { transform: scale(0.98); }
+    #findBtn:disabled { background: #bbb; cursor: default; }
+
+    #status {
+      font-size: 0.79rem;
+      color: #888;
+      text-align: center;
+      min-height: 16px;
+    }
+    #status.error   { color: #c0392b; }
+    #status.success { color: #1b6e3e; }
+
+    /* ── Chip radio groups ────────────────────────────────── */
+    .chip-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .chip-group label {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 11px;
+      border: 2px solid #e0e0e0;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #444;
+      transition: all 0.15s;
+      user-select: none;
+      white-space: nowrap;
+    }
+    .chip-group label:hover { border-color: #1b6e3e; color: #1b6e3e; }
+    .chip-group input[type=radio] { display: none; }
+    .chip-group label:has(input:checked) {
+      border-color: #1b6e3e;
+      background: #edf7f1;
+      color: #1b6e3e;
+      font-weight: 700;
+    }
+
+    /* ── Toggle switch ────────────────────────────────────── */
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 12px;
+      background: #f7f7f7;
+      border-radius: 10px;
+    }
+    .toggle-text { font-size: 0.85rem; font-weight: 600; color: #444; }
+
+    .switch {
+      position: relative;
+      width: 50px;
+      height: 27px;
+      flex-shrink: 0;
+    }
+    .switch input { display: none; }
+    .switch-track {
+      position: absolute;
+      inset: 0;
+      background: #1b6e3e;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .switch input:checked ~ .switch-track { background: #e85d04; }
+    .switch-thumb {
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      background: #fff;
+      border-radius: 50%;
+      top: 3px;
+      left: 3px;
+      pointer-events: none;
+      transition: left 0.3s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    }
+    .switch input:checked ~ .switch-thumb { left: 26px; }
+
+    /* ── Results card ─────────────────────────────────────── */
+    #results {
+      background: #f5fcf8;
+      border: 1px solid #cce8d8;
+      border-radius: 10px;
+      padding: 14px;
+      display: none;
+    }
+    #results h3 { font-size: 0.9rem; color: #1b6e3e; margin-bottom: 8px; }
+    #storeName   { font-size: 0.98rem; font-weight: 700; color: #222; margin-bottom: 10px; }
+
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0;
+      font-size: 0.86rem;
+      border-bottom: 1px solid #dff0e8;
+    }
+    .result-row:last-child { border-bottom: none; }
+    .result-label { color: #555; }
+    .result-value { font-weight: 600; color: #1b6e3e; text-align: right; }
+    .result-badge {
+      background: #1b6e3e;
+      color: #fff;
+      padding: 3px 11px;
+      border-radius: 12px;
+      font-size: 0.79rem;
+      font-weight: 700;
+    }
+
+    hr { border: none; border-top: 1px solid #eee; }
+
+    .attribution {
+      font-size: 0.67rem;
+      color: #bbb;
+      text-align: center;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<div id="panel">
+  <h1>🛒 Woolworths NZ<br>Route Finder</h1>
+
+  <div>
+    <div class="field-label">Your address in NZ</div>
+    <input type="text" id="addressInput"
+      placeholder="e.g. 12 Queen Street, Auckland"
+      autocomplete="street-address" />
+  </div>
+
+  <button id="findBtn" onclick="findRoute()">📍 Find Nearest Store</button>
+  <div id="status">Loading store locations…</div>
+
+  <!-- Transport mode -->
+  <div>
+    <div class="field-label">Transport mode</div>
+    <div class="chip-group">
+      <label><input type="radio" name="transport" value="foot" checked><span>🚶 Walk</span></label>
+      <label><input type="radio" name="transport" value="bike"><span>🚲 Bike</span></label>
+      <label><input type="radio" name="transport" value="car"><span>🚗 Drive</span></label>
+    </div>
+  </div>
+
+  <!-- Distance units -->
+  <div>
+    <div class="field-label">Distance unit</div>
+    <div class="chip-group">
+      <label><input type="radio" name="unit" value="km" checked><span>km</span></label>
+      <label><input type="radio" name="unit" value="m"><span>m</span></label>
+      <label><input type="radio" name="unit" value="miles"><span>miles</span></label>
+      <label><input type="radio" name="unit" value="furlongs"><span>furlongs</span></label>
+      <label><input type="radio" name="unit" value="fpf"><span>fur/fortnight</span></label>
+    </div>
+  </div>
+
+  <!-- Icon toggle -->
+  <div class="toggle-row">
+    <span class="toggle-text" id="iconToggleLabel">🟢 Woolworths Icon</span>
+    <label class="switch" title="Toggle icon between Woolworths and Dragon Ball Z">
+      <input type="checkbox" id="iconToggle" onchange="handleIconToggle()">
+      <div class="switch-track"></div>
+      <div class="switch-thumb"></div>
+    </label>
+  </div>
+
+  <!-- Results -->
+  <div id="results">
+    <h3>📍 Nearest Store</h3>
+    <div id="storeName">—</div>
+    <div class="result-row">
+      <span class="result-label">Distance</span>
+      <span class="result-badge" id="distanceDisplay">—</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">🚶 Walking</span>
+      <span class="result-value" id="walkTime">—</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">🚲 Biking</span>
+      <span class="result-value" id="bikeTime">—</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">🚗 Driving</span>
+      <span class="result-value" id="carTime">—</span>
+    </div>
+  </div>
+
+  <hr />
+  <div class="attribution">
+    Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors<br>
+    Geocoding: Nominatim · Routing: OSRM · Stores: Overpass API
+  </div>
+</div>
+
+<div id="map"></div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════
+// Constants
+// ═══════════════════════════════════════════════════════════════════
+
+/** Conversion factor from metres, and display label for each unit. */
+const UNIT_CFG = {
+  m:       { factor: 1,          label: 'm',   decimals: 0 },
+  km:      { factor: 1e-3,       label: 'km',  decimals: 2 },
+  miles:   { factor: 6.21371e-4, label: 'mi',  decimals: 2 },
+  furlongs:{ factor: 4.97097e-3, label: 'fur', decimals: 1 },
+  fpf:     { factor: 4.97097e-3, label: 'fur', decimals: 1 }
+};
+
+/** Average travel speeds in m/s. */
+const SPEEDS = {
+  foot: 1.39,   // ~5 km/h
+  bike: 4.17,   // ~15 km/h
+  car:  13.89   // ~50 km/h urban
+};
+
+const OSRM_PROFILE = { foot: 'foot', bike: 'cycling', car: 'driving' };
+
+const FORTNIGHT_S        = 14 * 24 * 3600; // 1,209,600 s
+const METRES_PER_FURLONG = 201.168;
+const EARTH_RADIUS_M     = 6_371_000;
+const MAX_ROUTING_ATTEMPTS = 5;
+
+// Fallback store list (shown if Overpass API is unreachable)
+const FALLBACK_STORES = [
+  { name: 'Woolworths Auckland CBD',     lat: -36.8534, lon: 174.7636 },
+  { name: 'Woolworths Ponsonby',         lat: -36.8566, lon: 174.7468 },
+  { name: 'Woolworths Newmarket',        lat: -36.8700, lon: 174.7762 },
+  { name: 'Woolworths Takapuna',         lat: -36.7878, lon: 174.7742 },
+  { name: 'Woolworths Henderson',        lat: -36.8766, lon: 174.6283 },
+  { name: 'Woolworths Pakuranga',        lat: -36.8944, lon: 174.9120 },
+  { name: 'Woolworths Papakura',         lat: -37.0672, lon: 174.9432 },
+  { name: 'Woolworths Manukau',          lat: -36.9920, lon: 174.8780 },
+  { name: 'Woolworths Wellington CBD',   lat: -41.2924, lon: 174.7787 },
+  { name: 'Woolworths Johnsonville',     lat: -41.2225, lon: 174.8045 },
+  { name: 'Woolworths Karori',           lat: -41.2836, lon: 174.7436 },
+  { name: 'Woolworths Petone',           lat: -41.2253, lon: 174.8744 },
+  { name: 'Woolworths Lower Hutt',       lat: -41.2075, lon: 174.9019 },
+  { name: 'Woolworths Christchurch CBD', lat: -43.5329, lon: 172.6362 },
+  { name: 'Woolworths Riccarton',        lat: -43.5281, lon: 172.5873 },
+  { name: 'Woolworths Papanui',          lat: -43.4937, lon: 172.6255 },
+  { name: 'Woolworths Dunedin',          lat: -45.8672, lon: 170.5082 },
+  { name: 'Woolworths Hamilton',         lat: -37.7833, lon: 175.2818 },
+  { name: 'Woolworths Tauranga',         lat: -37.6882, lon: 176.1651 },
+  { name: 'Woolworths Palmerston North', lat: -40.3490, lon: 175.6153 },
+  { name: 'Woolworths Nelson',           lat: -41.2707, lon: 173.2840 },
+  { name: 'Woolworths Napier',           lat: -39.4915, lon: 176.9177 },
+  { name: 'Woolworths Rotorua',          lat: -38.1430, lon: 176.2534 },
+  { name: 'Woolworths Invercargill',     lat: -46.4134, lon: 168.3478 },
+  { name: 'Woolworths Queenstown',       lat: -45.0311, lon: 168.6626 },
+];
+
+// ═══════════════════════════════════════════════════════════════════
+// SVG marker icons (hexagonal shape, matching Woolworths style)
+// ═══════════════════════════════════════════════════════════════════
+
+const WOOLWORTHS_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="42" viewBox="0 0 36 42">
+  <polygon points="18,42 0,31 0,11 18,0 36,11 36,31" fill="#1b6e3e" stroke="#114528" stroke-width="1.2"/>
+  <text x="18" y="28" text-anchor="middle"
+        font-family="Arial Black,Arial,sans-serif"
+        font-weight="900" font-size="25" fill="#fff">W</text>
+</svg>`;
+
+const DBZ_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="42" viewBox="0 0 36 42">
+  <defs>
+    <radialGradient id="dbzGrad" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#ffe566"/>
+      <stop offset="100%" stop-color="#ff7800"/>
+    </radialGradient>
+  </defs>
+  <polygon points="18,42 0,31 0,11 18,0 36,11 36,31" fill="url(#dbzGrad)" stroke="#c45000" stroke-width="1.5"/>
+  <!-- Four red star-dots like a Dragon Ball -->
+  <circle cx="10" cy="13" r="3.2" fill="#cc0000"/>
+  <circle cx="26" cy="13" r="3.2" fill="#cc0000"/>
+  <circle cx="10" cy="29" r="3.2" fill="#cc0000"/>
+  <circle cx="26" cy="29" r="3.2" fill="#cc0000"/>
+  <!-- Z in the centre -->
+  <text x="18" y="27" text-anchor="middle"
+        font-family="Impact,Arial Black,sans-serif"
+        font-weight="900" font-size="19" fill="#fff" stroke="#c45000" stroke-width="0.8">Z</text>
+</svg>`;
+
+function svgToLeafletIcon(svgStr) {
+  return L.icon({
+    iconUrl: 'data:image/svg+xml;base64,' + btoa(svgStr),
+    iconSize:    [36, 42],
+    iconAnchor:  [18, 42],
+    popupAnchor: [0, -44]
+  });
+}
+
+const USER_ICON = L.divIcon({
+  className: '',
+  html: '<div style="width:16px;height:16px;background:#2980b9;border:3px solid #fff;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.45)"></div>',
+  iconSize:   [16, 16],
+  iconAnchor: [8, 8]
+});
+
+// ═══════════════════════════════════════════════════════════════════
+// Map
+// ═══════════════════════════════════════════════════════════════════
+
+const map = L.map('map').setView([-41.0, 172.5], 5);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  maxZoom: 19
+}).addTo(map);
+
+// ═══════════════════════════════════════════════════════════════════
+// App State
+// ═══════════════════════════════════════════════════════════════════
+
+let stores       = [];       // [{name, lat, lon}, …]
+let storeMarkers = [];       // Leaflet Marker[]  (parallel to stores[])
+let userMarker   = null;
+let routeLayer   = null;
+let currentDistM = null;     // route distance in metres (null = no result yet)
+let useDbzIcon   = false;
+
+// ═══════════════════════════════════════════════════════════════════
+// Store Loading (Overpass API → fallback)
+// ═══════════════════════════════════════════════════════════════════
+
+async function loadStores() {
+  setStatus('Loading store locations…');
+  const q = `[out:json][timeout:25];
+(
+  node["shop"="supermarket"]["brand"~"Woolworths|Countdown",i](-47.5,166.3,-34.0,178.5);
+  way["shop"="supermarket"]["brand"~"Woolworths|Countdown",i](-47.5,166.3,-34.0,178.5);
+);
+out center;`;
+
+  try {
+    const res = await fetch('https://overpass-api.de/api/interpreter', {
+      method: 'POST',
+      body: 'data=' + encodeURIComponent(q)
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+
+    const loaded = data.elements
+      .map(el => ({
+        name: el.tags?.name || el.tags?.brand || 'Woolworths',
+        lat:  el.lat  ?? el.center?.lat,
+        lon:  el.lon  ?? el.center?.lon
+      }))
+      .filter(s => s.lat != null && s.lon != null);
+
+    if (!loaded.length) throw new Error('No stores in response');
+    stores = loaded;
+    setStatus(`${stores.length} stores loaded. Enter your NZ address above.`, 'success');
+  } catch (err) {
+    console.warn('Overpass unavailable, using fallback list:', err);
+    stores = FALLBACK_STORES.slice();
+    setStatus(`${stores.length} stores loaded (offline list). Enter your NZ address above.`, 'success');
+  }
+
+  renderAllStoreMarkers();
+}
+
+function renderAllStoreMarkers() {
+  storeMarkers.forEach(m => map.removeLayer(m));
+  const icon = svgToLeafletIcon(useDbzIcon ? DBZ_SVG : WOOLWORTHS_SVG);
+  storeMarkers = stores.map(s =>
+    L.marker([s.lat, s.lon], { icon })
+      .bindTooltip(s.name, { direction: 'top', offset: [0, -40] })
+      .addTo(map)
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// Helpers
+// ═══════════════════════════════════════════════════════════════════
+
+function setStatus(msg, type = '') {
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  el.className = type; // '' | 'error' | 'success'
+}
+
+/** Haversine distance between two lat/lon points, returns metres. */
+function haversine(lat1, lon1, lat2, lon2) {
+  const φ1 = lat1 * Math.PI / 180;
+  const φ2 = lat2 * Math.PI / 180;
+  const Δφ = (lat2 - lat1) * Math.PI / 180;
+  const Δλ = (lon2 - lon1) * Math.PI / 180;
+  const a  = Math.sin(Δφ/2)**2 + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ/2)**2;
+  return EARTH_RADIUS_M * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+/** Format a duration (seconds) as human-readable string. */
+function fmtDuration(seconds) {
+  if (seconds < 60)   return `${Math.round(seconds)} sec`;
+  if (seconds < 3600) return `${Math.round(seconds / 60)} min`;
+  const h = Math.floor(seconds / 3600);
+  const m = Math.round((seconds % 3600) / 60);
+  return m > 0 ? `${h}h ${m}m` : `${h}h`;
+}
+
+/** Format a distance (metres) according to the currently selected unit. */
+function fmtDistance(metres) {
+  const unit = document.querySelector('input[name="unit"]:checked').value;
+  const cfg  = UNIT_CFG[unit];
+  const val  = metres * cfg.factor;
+  const dec  = val >= 100 ? 0 : val >= 10 ? 1 : cfg.decimals;
+  return `${val.toFixed(dec)} ${cfg.label}`;
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// Results display — called whenever distance or units change
+// ═══════════════════════════════════════════════════════════════════
+
+function updateDisplay() {
+  if (currentDistM === null) return;
+
+  const unit = document.querySelector('input[name="unit"]:checked').value;
+  document.getElementById('distanceDisplay').textContent = fmtDistance(currentDistM);
+
+  const ids = { foot: 'walkTime', bike: 'bikeTime', car: 'carTime' };
+
+  for (const [mode, speedMs] of Object.entries(SPEEDS)) {
+    let text;
+    if (unit === 'fpf') {
+      // Show the travel speed expressed in furlongs per fortnight, plus actual time
+      const speedFpF = Math.round(speedMs * FORTNIGHT_S / METRES_PER_FURLONG).toLocaleString();
+      const secs     = currentDistM / speedMs;
+      text = `${fmtDuration(secs)} (${speedFpF} fur/fortnight)`;
+    } else {
+      text = fmtDuration(currentDistM / speedMs);
+    }
+    document.getElementById(ids[mode]).textContent = text;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// Icon Toggle
+// ═══════════════════════════════════════════════════════════════════
+
+function handleIconToggle() {
+  useDbzIcon = document.getElementById('iconToggle').checked;
+  document.getElementById('iconToggleLabel').textContent =
+    useDbzIcon ? '🟠 Dragon Ball Z Icon' : '🟢 Woolworths Icon';
+  renderAllStoreMarkers();
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// Main: Find Route
+// ═══════════════════════════════════════════════════════════════════
+
+async function findRoute() {
+  const address = document.getElementById('addressInput').value.trim();
+  if (!address) {
+    setStatus('Please enter an NZ address.', 'error');
+    return;
+  }
+  if (!stores.length) {
+    setStatus('Store data still loading — please wait a moment.', 'error');
+    return;
+  }
+
+  const btn = document.getElementById('findBtn');
+  btn.disabled = true;
+
+  try {
+    // ── 1. Geocode address via Nominatim (NZ only) ──────────────────
+    setStatus('Geocoding address…');
+    const geoRes = await fetch(
+      `https://nominatim.openstreetmap.org/search?` +
+      `q=${encodeURIComponent(address)}&countrycodes=nz&format=json&limit=1`,
+      { headers: { 'Accept-Language': 'en-NZ,en',
+                   'User-Agent': 'WoolworthsNZRouteFinder/1.0 (github.com/UoA-eResearch/woolworths-z)' } }
+    );
+    const geoData = await geoRes.json();
+
+    if (!geoData.length) {
+      setStatus('Address not found in NZ. Try a more specific address.', 'error');
+      return;
+    }
+
+    const userLat = parseFloat(geoData[0].lat);
+    const userLon = parseFloat(geoData[0].lon);
+
+    // Place user pin
+    if (userMarker) map.removeLayer(userMarker);
+    userMarker = L.marker([userLat, userLon], { icon: USER_ICON, zIndexOffset: 1000 })
+      .bindPopup(`<b>📍 Your Location</b><br><small>${geoData[0].display_name}</small>`)
+      .addTo(map);
+
+    // ── 2. Sort stores by straight-line distance ────────────────────
+    setStatus('Finding nearest store…');
+    const ranked = stores
+      .map((s, idx) => ({ s, idx, d: haversine(userLat, userLon, s.lat, s.lon) }))
+      .sort((a, b) => a.d - b.d);
+
+    // ── 3. Get road route to nearest store via OSRM ─────────────────
+    const transport = document.querySelector('input[name="transport"]:checked').value;
+    const profile   = OSRM_PROFILE[transport];
+
+    let routeDistM  = null;
+    let targetEntry = null;
+
+    for (let i = 0; i < Math.min(MAX_ROUTING_ATTEMPTS, ranked.length); i++) {
+      const entry = ranked[i];
+      setStatus(`Getting route to ${entry.s.name}…`);
+
+      try {
+        const url = `https://router.project-osrm.org/route/v1/${profile}/` +
+          `${userLon},${userLat};${entry.s.lon},${entry.s.lat}` +
+          `?overview=full&geometries=geojson`;
+
+        const rRes  = await fetch(url);
+        const rData = await rRes.json();
+
+        if (rData.code !== 'Ok' || !rData.routes?.length) continue;
+
+        const route = rData.routes[0];
+        routeDistM  = route.distance;
+        targetEntry = entry;
+
+        if (routeLayer) map.removeLayer(routeLayer);
+        routeLayer = L.geoJSON(route.geometry, {
+          style: { color: '#1b6e3e', weight: 5, opacity: 0.85, lineCap: 'round', lineJoin: 'round' }
+        }).addTo(map);
+
+        break;
+      } catch (e) {
+        console.warn(`OSRM attempt ${i} failed:`, e);
+      }
+    }
+
+    // ── 4. Fallback: straight-line if routing failed ────────────────
+    if (routeDistM === null) {
+      targetEntry = ranked[0];
+      routeDistM  = targetEntry.d;
+
+      if (routeLayer) map.removeLayer(routeLayer);
+      routeLayer = L.polyline(
+        [[userLat, userLon], [targetEntry.s.lat, targetEntry.s.lon]],
+        { color: '#1b6e3e', weight: 3, dashArray: '7 7', opacity: 0.75 }
+      ).addTo(map);
+
+      setStatus('Routing unavailable — showing straight-line distance.', 'error');
+    } else {
+      setStatus('Route found!', 'success');
+    }
+
+    currentDistM = routeDistM;
+
+    // ── 5. Zoom to route and show results ───────────────────────────
+    map.fitBounds(
+      L.latLngBounds([userLat, userLon], [targetEntry.s.lat, targetEntry.s.lon]).pad(0.3)
+    );
+
+    document.getElementById('storeName').textContent = targetEntry.s.name +
+      (routeDistM === targetEntry.d ? ' (straight-line)' : '');
+    document.getElementById('results').style.display = 'block';
+    updateDisplay();
+
+    // Open the store's tooltip/popup
+    storeMarkers[targetEntry.idx]?.openTooltip();
+
+  } catch (err) {
+    console.error(err);
+    setStatus('Error: ' + err.message, 'error');
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// Event Listeners
+// ═══════════════════════════════════════════════════════════════════
+
+document.getElementById('addressInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') findRoute();
+});
+
+// Re-render times when unit changes
+document.querySelectorAll('input[name="unit"]').forEach(el =>
+  el.addEventListener('change', updateDisplay)
+);
+
+// Re-route when transport mode changes (if we already have a result)
+document.querySelectorAll('input[name="transport"]').forEach(el =>
+  el.addEventListener('change', () => {
+    if (currentDistM !== null && document.getElementById('addressInput').value.trim()) {
+      findRoute();
+    }
+  })
+);
+
+// ═══════════════════════════════════════════════════════════════════
+// Initialise
+// ═══════════════════════════════════════════════════════════════════
+
+loadStores();
+</script>
+</body>
+</html>
