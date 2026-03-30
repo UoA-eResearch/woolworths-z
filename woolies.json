@@ -1,0 +1,5867 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-03-30T23:00:33Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 65373197,
+  "lat": -36.9080089,
+  "lon": 174.7556524,
+  "tags": {
+    "addr:housenumber": "532",
+    "addr:postcode": "1042",
+    "addr:street": "Mount Albert Road",
+    "branch": "Three Kings",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 624 2317",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 262766209,
+  "lat": -36.9226323,
+  "lon": 174.7834399,
+  "tags": {
+    "branch": "Onehunga",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 430605689,
+  "lat": -36.8763662,
+  "lon": 174.8283777,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Countdown",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 457871790,
+  "lat": -41.2228590,
+  "lon": 174.8056314,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 462742666,
+  "lat": -36.9129873,
+  "lon": 174.8709888,
+  "tags": {
+    "addr:suburb": "Pakuranga",
+    "branch": "Pakuranga",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "official_name": "Woolworths Pakuranga",
+    "opening_hours": "Mo-Th,Sa 08:00-21:00; Fr,Su off",
+    "phone": "+64 9 570 1649",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9204/pakuranga/pakuranga-woolworths"
+  }
+},
+{
+  "type": "node",
+  "id": 692964149,
+  "lat": -36.9095421,
+  "lon": 174.6636616,
+  "tags": {
+    "branch": "Kelston",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 821568679,
+  "lat": -41.2107306,
+  "lon": 174.9075343,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "level": "0",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 822490942,
+  "lat": -36.8697638,
+  "lon": 174.7102258,
+  "tags": {
+    "branch": "Point Chevalier",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 961403736,
+  "lat": -36.6362752,
+  "lon": 174.7461255,
+  "tags": {
+    "branch": "Whangaparaoa",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "official_name": "Whangaparaoa Woolworths",
+    "old_name": "Whangaparaoa Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Progressive Enterprises",
+    "phone": "+64 9 424 9222",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 1021421644,
+  "lat": -36.9706896,
+  "lon": 174.8606725,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "payment:american_express": "yes",
+    "payment:cash": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 1538714093,
+  "lat": -36.8833301,
+  "lon": 174.7346411,
+  "tags": {
+    "addr:neighbourhood": "St Lukes",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "level": "0",
+    "name": "Woolworths",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1603164800,
+  "lat": -36.8486588,
+  "lon": 174.7647089,
+  "tags": {
+    "addr:housenumber": "19-25",
+    "addr:street": "Victoria Street West",
+    "branch": "Auckland Victoria Street West",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "diet:halal": "yes",
+    "name": "Woolworths",
+    "name:ja": "カウントダウン オークランドメトロ店",
+    "opening_hours": "Mo-Fr 07:00-20:00; Sa,Su 08:00-20:00",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:jcb": "yes",
+    "payment:mastercard": "yes",
+    "payment:notes": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "phone": "+64 9 255 2428",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9283/auckland/auckland-victoria-street-west",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1721629146,
+  "lat": -37.7499566,
+  "lon": 175.2781140,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 1754364677,
+  "lat": -39.9356308,
+  "lon": 175.0532157,
+  "tags": {
+    "branch": "Trafalgar Square",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "check_date": "2024-01-13",
+    "internet_access": "wlan",
+    "name": "Woolworths",
+    "name:ja": "カウントダウン トラファルガースクエア店",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 6 349 0199",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 2087948126,
+  "lat": -41.3075167,
+  "lon": 174.7773064,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "John Street",
+    "branch": "Newtown",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2158628064,
+  "lat": -36.8113794,
+  "lon": 174.7246297,
+  "tags": {
+    "branch": "Birkenhead",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "official_name": "Birkenhead Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 480 2921",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 2242798433,
+  "lat": -40.9170870,
+  "lon": 175.0050929,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "check_date": "2025-03-14",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3190827984,
+  "lat": -36.7817287,
+  "lon": 174.7228262,
+  "tags": {
+    "branch": "Glenfield",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "official_name": "Glenfield Woolworths",
+    "old_name": "Glenfield Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 442 1041",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9163/glenfield/glenfield-countdown"
+  }
+},
+{
+  "type": "node",
+  "id": 3200752167,
+  "lat": -36.9974963,
+  "lon": 174.7890291,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Woolworths Group New Zealand",
+    "phone": "+64 9 255 9697",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3421505085,
+  "lat": -36.8583854,
+  "lon": 174.7489731,
+  "tags": {
+    "addr:street": "Williamson Avenue",
+    "branch": "Ponsonby",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "official_name": "Ponsonby Woolworths",
+    "old_name": "Ponsonby Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 376 5097",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9057/ponsonby/ponsonby-countdown"
+  }
+},
+{
+  "type": "node",
+  "id": 3659973166,
+  "lat": -36.9866236,
+  "lon": 174.8841059,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "payment:american_express": "yes",
+    "payment:cash": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3666557158,
+  "lat": -36.9134977,
+  "lon": 174.9288338,
+  "tags": {
+    "addr:city": "Auckland",
+    "addr:housenumber": "112",
+    "addr:postcode": "2014",
+    "addr:street": "Whitford Road",
+    "addr:suburb": "Somerville",
+    "air_conditioning": "yes",
+    "branch": "Meadowlands",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths Supermarkets",
+    "diet:dairy_free": "yes",
+    "diet:fruitarian": "yes",
+    "diet:gluten_free": "yes",
+    "diet:healthy": "yes",
+    "diet:organic": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "internet_access": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Woolworths",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:visa_debit": "yes",
+    "phone": "+64 9 537 8497",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/"
+  }
+},
+{
+  "type": "node",
+  "id": 3694711703,
+  "lat": -37.6990730,
+  "lon": 176.2837376,
+  "tags": {
+    "branch": "Papamoa",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 7 547 4024",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/stores/bay-of-plenty/papamoa-cd"
+  }
+},
+{
+  "type": "node",
+  "id": 3772198979,
+  "lat": -36.8187035,
+  "lon": 174.6121372,
+  "tags": {
+    "branch": "Northwest",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3772226063,
+  "lat": -36.9072990,
+  "lon": 174.6843850,
+  "tags": {
+    "branch": "Lynnmall",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "official_name": "Lynnmall Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 826 0340",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3790083045,
+  "lat": -37.7135008,
+  "lon": 176.1506858,
+  "tags": {
+    "branch": "Fraser Cove",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 4102218791,
+  "lat": -39.3273137,
+  "lon": 174.2793688,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 4354531035,
+  "lat": -43.1563620,
+  "lon": 172.7321431,
+  "tags": {
+    "addr:housenumber": "121",
+    "addr:postcode": "7410",
+    "addr:street": "Carters Road",
+    "addr:suburb": "Amberley",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths (New Zealand supermarket chain)",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "operator": "Woolworths",
+    "phone": "+64 3 314 0000",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 4712861689,
+  "lat": -43.5324507,
+  "lon": 172.6755846,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "check_date": "2023-08-06",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 4780200721,
+  "lat": -45.0136555,
+  "lon": 168.7421170,
+  "tags": {
+    "addr:city": "Queenstown",
+    "addr:housenumber": "30",
+    "addr:street": "Grant Road",
+    "addr:suburb": "Frankton",
+    "branch": "Queenstown",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "check_date": "2024-04-12",
+    "check_date:opening_hours": "2024-02-25",
+    "name": "Woolworths",
+    "opening_hours": "07:00-22:00",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "ref:linz:address_id": "1939321",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5157906821,
+  "lat": -36.7960548,
+  "lon": 175.0459140,
+  "tags": {
+    "alt_name": "Woolworths Ostend",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "phone": "+64 9 372 8431",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9030/ostend/waiheke-island-countdown"
+  }
+},
+{
+  "type": "node",
+  "id": 5681332479,
+  "lat": -41.2843215,
+  "lon": 174.7752344,
+  "tags": {
+    "addr:city": "Wellington",
+    "addr:housenumber": "280/284",
+    "addr:postcode": "6011",
+    "addr:street": "Lambton Quay",
+    "branch": "Cable Car Lane",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "check_date": "2026-01-06",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6412816090,
+  "lat": -46.0984766,
+  "lon": 168.9443098,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 7092241148,
+  "lat": -36.8439036,
+  "lon": 174.7652319,
+  "tags": {
+    "branch": "Albert Street",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "diet:halal": "yes",
+    "level": "-1",
+    "name": "Woolworths",
+    "official_name": "Woolworths Metro Albert Street",
+    "opening_hours": "Mo-Fr 08:00-19:00; Sa-Su 08:00-18:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+64 9 372 8439",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7827833774,
+  "lat": -36.8707867,
+  "lon": 174.7751969,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "level": "3",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 8362653553,
+  "lat": -36.8437784,
+  "lon": 174.7570670,
+  "tags": {
+    "branch": "Halsey Street",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "official_name": "Metro Halsey Street",
+    "opening_hours": "Mo-Fr 07:00-19:00; Sa,Su 08:00-18:00",
+    "phone": "+64 9 377 9146",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 9787109167,
+  "lat": -35.4103614,
+  "lon": 173.7982419,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 11107269280,
+  "lat": -45.2495200,
+  "lon": 169.3848595,
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 23907605,
+  "center": {
+    "lat": -36.8452518,
+    "lon": 174.7728110
+  },
+  "nodes": [
+    259134035,
+    1603187325,
+    1603187324,
+    9528979973,
+    6712199706,
+    3610234767,
+    3610239617,
+    9528979971,
+    3610239615,
+    9528979961,
+    8448912554,
+    3610239612,
+    259134037,
+    7961461404,
+    7961461418,
+    1603187314,
+    1603187315,
+    259134038,
+    7887185688,
+    1603187320,
+    1603187322,
+    1603187321,
+    259134035
+  ],
+  "tags": {
+    "addr:city": "Auckland",
+    "addr:country": "NZ",
+    "addr:housenumber": "76",
+    "addr:postcode": "1010",
+    "addr:street": "Quay Street",
+    "addr:suburb": "Auckland Central",
+    "alt_name": "Quay Street Countdown",
+    "branch": "Auckland City",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Auckland City Woolworths",
+    "old_name": "Auckland City Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Woolworths New Zealand",
+    "phone": "+64 9 373 5017",
+    "ref:linz:address_id": "1374574",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9094/auckland/auckland-city-countdown",
+    "wikidata": "Q122979316"
+  }
+},
+{
+  "type": "way",
+  "id": 23920630,
+  "center": {
+    "lat": -36.8774717,
+    "lon": 174.7519522
+  },
+  "nodes": [
+    259292638,
+    7733159233,
+    7733159227,
+    262438148,
+    259292639,
+    259292640,
+    259292644,
+    259292638
+  ],
+  "tags": {
+    "addr:city": "Auckland",
+    "addr:postcode": "1024",
+    "addr:suburb": "Mount Eden",
+    "branch": "Mount Eden",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "layer": "1",
+    "name": "Woolworths",
+    "official_name": "Mount Eden Countdown",
+    "opening_hours": "Mo-Su 06:00-23:00",
+    "payment:american_express": "yes",
+    "payment:apple_pay": "yes",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:diners_club": "yes",
+    "payment:discover_card": "yes",
+    "payment:google_pay": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+64 9 638 7164",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9235/mt-eden-auckland/mount-eden-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 24515050,
+  "center": {
+    "lat": -36.9703691,
+    "lon": 174.8007359
+  },
+  "nodes": [
+    266594227,
+    266594228,
+    266594159,
+    266594229,
+    266594210,
+    266594227
+  ],
+  "tags": {
+    "branch": "Māngere Town Centre",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths (New Zealand supermarket chain)",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "phone": "+64 9 255 9670",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 24657871,
+  "center": {
+    "lat": -36.8214066,
+    "lon": 174.6143437
+  },
+  "nodes": [
+    268013799,
+    11350195269,
+    268013800,
+    11350195270,
+    11350195271,
+    268013801,
+    11350195272,
+    11350195398,
+    268020068,
+    268013803,
+    268013804,
+    268013805,
+    268013806,
+    268013807,
+    268013808,
+    268013809,
+    268013810,
+    11350195267,
+    11350195274,
+    11350195273,
+    11350195268,
+    268013799
+  ],
+  "tags": {
+    "branch": "Westgate",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "commercial",
+    "name": "Woolworths",
+    "official_name": "Westgate Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Woolworths Group New Zealand",
+    "phone": "+64 9 832 5382",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 25890086,
+  "center": {
+    "lat": -36.9253724,
+    "lon": 174.7229681
+  },
+  "nodes": [
+    282418026,
+    12678183568,
+    286105679,
+    286105672,
+    6315306036,
+    282417850,
+    282418027,
+    6315306037,
+    282418028,
+    286113623,
+    282417854,
+    8386286199,
+    12678183567,
+    286113586,
+    10592617628,
+    282418026
+  ],
+  "tags": {
+    "addr:housenumber": "570",
+    "addr:street": "Hillsborough Road",
+    "addr:suburb": "Lynfield",
+    "branch": "Lynfield",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 626 0596",
+    "roof:colour": "white",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9140/lynfield/lynfield-woolworths"
+  }
+},
+{
+  "type": "way",
+  "id": 27503671,
+  "center": {
+    "lat": -36.8893202,
+    "lon": 174.7936604
+  },
+  "nodes": [
+    301950768,
+    301950769,
+    3085333214,
+    3085333216,
+    3085333220,
+    7296443495,
+    3085333223,
+    3085333227,
+    3085333225,
+    301950770,
+    301950771,
+    8128124586,
+    8128124587,
+    8128124588,
+    8128124585,
+    8128124583,
+    8128124590,
+    8128124591,
+    8128124592,
+    8128124589,
+    301950768
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 28791104,
+  "center": {
+    "lat": -36.8542267,
+    "lon": 174.7315432
+  },
+  "nodes": [
+    316571830,
+    9177260828,
+    316571831,
+    3250457807,
+    316571832,
+    316571833,
+    9177260829,
+    9177260830,
+    7860014778,
+    7860014779,
+    7249633718,
+    316571830
+  ],
+  "tags": {
+    "branch": "Grey Lynn",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Grey Lynn Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 378 6313",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9068/grey-lynn-auckland/grey-lynn-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 34369592,
+  "center": {
+    "lat": -43.5327602,
+    "lon": 172.5730749
+  },
+  "nodes": [
+    5554350606,
+    6106921682,
+    6451552832,
+    394486246,
+    394486247,
+    5554350608,
+    394486248,
+    394486249,
+    9996777672,
+    4731365992,
+    6388471830,
+    11207073631,
+    394486251,
+    394486252,
+    394486253,
+    394486254,
+    5554350592,
+    5554350593,
+    5554350594,
+    5554350595,
+    394486255,
+    394486261,
+    5554350606
+  ],
+  "tags": {
+    "addr:city": "Christchurch",
+    "addr:country": "NZ",
+    "addr:housenumber": "361",
+    "addr:postcode": "8041",
+    "addr:street": "Riccarton Road",
+    "addr:suburb": "Upper Riccarton",
+    "branch": "Church Corner",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "building:levels": "2",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "ref:linz:address_id": "176518",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 49396700,
+  "center": {
+    "lat": -41.3193955,
+    "lon": 174.7950216
+  },
+  "nodes": [
+    627273504,
+    4699896634,
+    627273505,
+    4199712656,
+    4199712658,
+    627273506,
+    7150909390,
+    627273507,
+    627273508,
+    627273509,
+    4699896635,
+    2956575004,
+    2956575003,
+    627273510,
+    627273511,
+    627273504
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "building:levels": "1",
+    "check_date": "2024-01-16",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 06:00-24:00",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 53916748,
+  "center": {
+    "lat": -43.5533264,
+    "lon": 172.6356006
+  },
+  "nodes": [
+    680455527,
+    7279244429,
+    7279244428,
+    7279244427,
+    7279244430,
+    7279244426,
+    7279244425,
+    7279244423,
+    7279244424,
+    680455532,
+    680467506,
+    680467515,
+    7279244421,
+    7279244422,
+    680455541,
+    680455547,
+    7279244416,
+    7279244417,
+    9689433586,
+    7279244419,
+    7279244418,
+    7279244420,
+    680467552,
+    680459337,
+    680455527
+  ],
+  "tags": {
+    "addr:city": "Christchurch",
+    "addr:country": "NZ",
+    "addr:housenumber": "219",
+    "addr:street": "Colombo Street",
+    "branch": "Colombo Street",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 08:00-22:00",
+    "payment:american_express": "yes",
+    "payment:cash": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+64 3 337 5781",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 54842519,
+  "center": {
+    "lat": -38.0469090,
+    "lon": 175.7804466
+  },
+  "nodes": [
+    690269853,
+    690269854,
+    9665107494,
+    9665107493,
+    690269856,
+    3915712970,
+    9665107492,
+    3915712968,
+    3915712971,
+    3915712966,
+    3502591759,
+    3502591757,
+    690269859,
+    690269853
+  ],
+  "tags": {
+    "branch": "Putaruru",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "official_name": "Woolworths Putaruru",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "phone": "+64 7 885 1004",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9095/putaruru/putaruru-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 61645709,
+  "center": {
+    "lat": -36.9301028,
+    "lon": 174.9109314
+  },
+  "nodes": [
+    768511917,
+    768511919,
+    1365110962,
+    768511921,
+    768512205,
+    768512208,
+    768512210,
+    768512212,
+    768512214,
+    768511917
+  ],
+  "tags": {
+    "branch": "Botany Downs",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Botany Downs Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 271 3634",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9141/botany-downs/botany-downs-woolworths"
+  }
+},
+{
+  "type": "way",
+  "id": 62154227,
+  "center": {
+    "lat": -41.2238955,
+    "lon": 174.8082860
+  },
+  "nodes": [
+    1439843310,
+    1439843337,
+    1439843339,
+    1439843332,
+    1439843346,
+    7394040427,
+    7394040409,
+    1439843285,
+    7394040416,
+    7394040415,
+    7394040414,
+    1439843291,
+    1439843329,
+    1439843327,
+    1439843265,
+    7394040413,
+    7394040412,
+    1439843319,
+    7394040411,
+    7394040410,
+    1439843310
+  ],
+  "tags": {
+    "addr:street": "Johnsonville Road",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 06:00-00:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 66641277,
+  "center": {
+    "lat": -36.8994348,
+    "lon": 174.9082305
+  },
+  "nodes": [
+    806171664,
+    12432714599,
+    806171665,
+    806171669,
+    2988783126,
+    806171670,
+    806171672,
+    806171673,
+    806171664
+  ],
+  "tags": {
+    "branch": "Highland Park",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "layer": "-1",
+    "name": "Woolworths",
+    "note": "Yes, there are 2 countdowns right next to eachother",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 67588345,
+  "center": {
+    "lat": -36.7915398,
+    "lon": 174.7655330
+  },
+  "nodes": [
+    5504679190,
+    9044625506,
+    9044625507,
+    9044625508,
+    9044625509,
+    816268462,
+    3612437693,
+    3612437692,
+    816268463,
+    3612437690,
+    3612437691,
+    3612437689,
+    816268464,
+    816268465,
+    7720730402,
+    3612437688,
+    9044625505,
+    3612437686,
+    3612437685,
+    9044625504,
+    3612437684,
+    9044625503,
+    9044625494,
+    3612437683,
+    3612437687,
+    5504679190
+  ],
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Barrys Point Road",
+    "addr:suburb": "Takapuna",
+    "branch": "Takapuna",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "building:levels": "2",
+    "name": "Woolworths",
+    "official_name": "Takapuna Woolworths",
+    "old_name": "Takapuna Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "phone": "+64 9 486 7538",
+    "ref:linz:address_id": "1130783",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9237/takapuna/takapuna-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 68678569,
+  "center": {
+    "lat": -43.3859248,
+    "lon": 172.6577957
+  },
+  "nodes": [
+    825449633,
+    825449634,
+    825449635,
+    825449636,
+    825449633
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 71890695,
+  "center": {
+    "lat": -36.7174547,
+    "lon": 174.7472866
+  },
+  "nodes": [
+    854458982,
+    854458983,
+    854458984,
+    854458985,
+    854458982
+  ],
+  "tags": {
+    "branch": "Browns Bay",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "building:levels": "1",
+    "check_date:opening_hours": "2022-07-30",
+    "name": "Woolworths",
+    "nohousenumber": "yes",
+    "official_name": "Browns Bay Woolworths",
+    "old_name": "Browns Bay Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "opening_hours:signed": "no",
+    "phone": "+64 9 476 5974",
+    "ref": "9224",
+    "roof:levels": "0",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9224/browns-bay/browns-bay-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 80670970,
+  "center": {
+    "lat": -41.1226078,
+    "lon": 175.0712593
+  },
+  "nodes": [
+    940891476,
+    13335558344,
+    13335558345,
+    940891477,
+    940891478,
+    13335558346,
+    13335558347,
+    13335558348,
+    13335558349,
+    13335558350,
+    13335558351,
+    13335558352,
+    13335558353,
+    13335558354,
+    940891479,
+    940891476
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 82004543,
+  "center": {
+    "lat": -36.7590991,
+    "lon": 174.7397275
+  },
+  "nodes": [
+    955400612,
+    9234459360,
+    9234459361,
+    9234459362,
+    9234459359,
+    9234459358,
+    9234459357,
+    3593838717,
+    3593838715,
+    955400613,
+    9234459356,
+    9234459355,
+    9146749281,
+    3593838722,
+    3593838724,
+    9234459354,
+    3593838726,
+    3593838727,
+    955400614,
+    9234459376,
+    955400617,
+    9234459375,
+    955400612
+  ],
+  "tags": {
+    "branch": "Sunnynook",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "official_name": "Sunnynook Woolworths",
+    "old_name": "Sunnynook Countdown;Foodtown Sunnynook",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 410 8491",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9197/sunnynook/sunnynook-woolworths"
+  }
+},
+{
+  "type": "way",
+  "id": 83018218,
+  "center": {
+    "lat": -37.1995668,
+    "lon": 174.9022174
+  },
+  "nodes": [
+    3412346942,
+    12472625072,
+    3412346938,
+    3412346939,
+    8807940450,
+    965905607,
+    8816553526,
+    965905608,
+    12651100451,
+    12651100449,
+    8816553521,
+    8810458985,
+    3412346942
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 83078199,
+  "center": {
+    "lat": -46.3748497,
+    "lon": 168.3463079
+  },
+  "nodes": [
+    966608980,
+    966610458,
+    9596655299,
+    966607321,
+    966609122,
+    966608980
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 87466993,
+  "center": {
+    "lat": -40.9525223,
+    "lon": 175.6589096
+  },
+  "nodes": [
+    1017120795,
+    3364725802,
+    1017120671,
+    9036935350,
+    1017120680,
+    1017120778,
+    1017120775,
+    1017120784,
+    9036935349,
+    9036935348,
+    1017120757,
+    1017120795
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "warehouse",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 88748730,
+  "center": {
+    "lat": -45.8741793,
+    "lon": 170.5063906
+  },
+  "nodes": [
+    1030118733,
+    1030118966,
+    1030118628,
+    1030118958,
+    5541749533,
+    5541749534,
+    5541749535,
+    5541749536,
+    2249078446,
+    1030118571,
+    1030118926,
+    2249078451,
+    2249078452,
+    1030118578,
+    1030118555,
+    1030119031,
+    1030118623,
+    1030118733
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building": "retail",
+    "check_date": "2025-07-21",
+    "name": "Woolworths",
+    "opening_hours": "07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 92350303,
+  "center": {
+    "lat": -37.0589556,
+    "lon": 174.9411784
+  },
+  "nodes": [
+    8868986047,
+    8868986046,
+    7747744269,
+    7747744266,
+    1071713051,
+    7747744262,
+    7747744263,
+    1071713034,
+    1074210930,
+    8868986047
+  ],
+  "tags": {
+    "branch": "Roselands Mall",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Roselands Mall Woolworths",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "phone": "+64 9 298 9413",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 92350309,
+  "center": {
+    "lat": -37.0642800,
+    "lon": 174.9447004
+  },
+  "nodes": [
+    1071712718,
+    3367851795,
+    3367851778,
+    3367851784,
+    3367851796,
+    3367851803,
+    3367851813,
+    1071713013,
+    1071712988,
+    1071712967,
+    1071712749,
+    1071712611,
+    1071713037,
+    7993821356,
+    7993821359,
+    7993821357,
+    7993821358,
+    1071712718
+  ],
+  "tags": {
+    "branch": "Papakura",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Papakura Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Woolworths Group New Zealand",
+    "phone": "+64 9 299 5660",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 101486484,
+  "center": {
+    "lat": -43.5568252,
+    "lon": 172.7025138
+  },
+  "nodes": [
+    1171771843,
+    1171772116,
+    1171771970,
+    1171771769,
+    9778859552,
+    9778859553,
+    9778859554,
+    9778859551,
+    1171771843
+  ],
+  "tags": {
+    "addr:city": "Christchurch",
+    "addr:country": "NZ",
+    "addr:housenumber": "999",
+    "addr:postcode": "8023",
+    "addr:street": "Ferry Road",
+    "addr:suburb": "Ferrymead",
+    "branch": "Ferrymead",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "check_date": "2024-12-29",
+    "name": "Woolworths",
+    "note": "demolished 2012 due to earthquake damage in 2011, reconstruction started 2013 and finished 2014",
+    "opened": "2014-04-10",
+    "opening_hours": "Mo-Sa 07:00-22:00, Su 07:00-21:00",
+    "operator": "Woolworths",
+    "payment:american_express": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+64 3 373 6520",
+    "ref:linz:address_id": "269659",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 101515749,
+  "center": {
+    "lat": -43.5387714,
+    "lon": 172.6417680
+  },
+  "nodes": [
+    1172163928,
+    7199015352,
+    7199015351,
+    1172163929,
+    7199015326,
+    1172163930,
+    12773201106,
+    1172163933,
+    1172163934,
+    1172163956,
+    9464732536,
+    1172163938,
+    7199015345,
+    7199015346,
+    1172163939,
+    1172163941,
+    1172163942,
+    4577241128,
+    7199015347,
+    7199015348,
+    1172163946,
+    1172163948,
+    1172163949,
+    1172163950,
+    1172163928
+  ],
+  "tags": {
+    "addr:city": "Christchurch",
+    "addr:housenumber": "347",
+    "addr:postcode": "8011",
+    "addr:street": "Moorhouse Avenue",
+    "addr:suburb": "Christchurch Central",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Woolworths New Zealand",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+64 3 3650276",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/"
+  }
+},
+{
+  "type": "way",
+  "id": 101695417,
+  "center": {
+    "lat": -43.5068158,
+    "lon": 172.7299920
+  },
+  "nodes": [
+    1174138218,
+    1174138222,
+    1174138228,
+    11854016442,
+    11854016441,
+    8566522624,
+    1174138234,
+    1174138239,
+    1174138244,
+    2273530612,
+    1174138281,
+    1174138286,
+    1174136876,
+    1174136832,
+    1174136828,
+    13382448982,
+    1174138290,
+    13382448980,
+    1174138308,
+    1174138314,
+    13382448984,
+    1174138218
+  ],
+  "tags": {
+    "addr:city": "Christchurch",
+    "addr:country": "NZ",
+    "addr:housenumber": "12",
+    "addr:postcode": "8061",
+    "addr:street": "Hawke Street",
+    "addr:suburb": "New Brighton",
+    "branch": "New Brighton",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "New Brighton Woolworths",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "phone": "+64 3 373 9007",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 108202400,
+  "center": {
+    "lat": -37.0475385,
+    "lon": 174.9271746
+  },
+  "nodes": [
+    1241802320,
+    5291156276,
+    1241802465,
+    11244700081,
+    11244700082,
+    11244700083,
+    1241802401,
+    3256324613,
+    1241802541,
+    11244700087,
+    8822770179,
+    1241802320
+  ],
+  "tags": {
+    "branch": "Takanini",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Takanini Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 255 2408",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9202/takanini/takanini-countdown",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 110376340,
+  "center": {
+    "lat": -38.6838538,
+    "lon": 176.0709758
+  },
+  "nodes": [
+    1260636174,
+    9813323620,
+    9813323621,
+    1260636041,
+    13119633103,
+    1260636247,
+    9813323622,
+    9813323623,
+    1260636108,
+    1260636156,
+    13119633105,
+    13119633104,
+    1260636389,
+    1260636174
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "check_date": "2026-01-20",
+    "name": "Woolworths",
+    "note": "need updating upon aerial availability as the old building & car park layout is still present.",
+    "opening_hours": "07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 131387679,
+  "center": {
+    "lat": -37.3783542,
+    "lon": 175.6680489
+  },
+  "nodes": [
+    1446104809,
+    3553843944,
+    3553843936,
+    3553843910,
+    1446104803,
+    1494105057,
+    1446104807,
+    1446104809
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 131476149,
+  "center": {
+    "lat": -37.5450931,
+    "lon": 175.7138119
+  },
+  "nodes": [
+    1446870870,
+    1446870903,
+    1446870914,
+    1446870927,
+    1446870908,
+    1446870870
+  ],
+  "tags": {
+    "branch": "Te Aroha",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building": "retail",
+    "name": "Woolworths",
+    "name:ja": "カウントダウン",
+    "opening_hours": "09:00-21:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 131646941,
+  "center": {
+    "lat": -36.8656581,
+    "lon": 174.6463099
+  },
+  "nodes": [
+    1448645854,
+    13651617377,
+    3278001303,
+    13651617384,
+    13651617376,
+    13651617375,
+    13651617374,
+    1448645851,
+    13651617373,
+    1448645852,
+    1448645853,
+    1448645859,
+    7012947399,
+    7012947397,
+    7012947398,
+    7012947403,
+    7012947402,
+    12600352476,
+    7012947401,
+    7012947400,
+    7012947404,
+    1448645860,
+    1448645858,
+    1448645857,
+    1448645855,
+    1448645854
+  ],
+  "tags": {
+    "branch": "Te Atatu South",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Te Atatu South Woolworths",
+    "old_name": "Te Atatu South Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 836 2582",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 132198153,
+  "center": {
+    "lat": -35.2790833,
+    "lon": 174.0809570
+  },
+  "nodes": [
+    1454713237,
+    1454713238,
+    1454713124,
+    1454713187,
+    1454713237
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "note": "Open as of late March 2022 C̶l̶o̶s̶e̶d̶ ̶a̶s̶ ̶o̶f̶ ̶l̶a̶t̶e̶ ̶J̶a̶n̶u̶a̶r̶y̶ ̶2̶0̶1̶5̶",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 137483733,
+  "center": {
+    "lat": -37.8091095,
+    "lon": 175.7743064
+  },
+  "nodes": [
+    1507956078,
+    4203545627,
+    1507956095,
+    1507956104,
+    1507956105,
+    1507956109,
+    1507956086,
+    1507956082,
+    1507956078
+  ],
+  "tags": {
+    "branch": "Matamata",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building": "yes",
+    "name": "Woolworths",
+    "name:ja": "カウントダウン",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9120/matamata/matamata-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 137604668,
+  "center": {
+    "lat": -38.1432402,
+    "lon": 176.2553549
+  },
+  "nodes": [
+    1509235878,
+    1509235843,
+    1509235844,
+    1509235855,
+    1509235869,
+    1509235882,
+    1509235879,
+    1509235878
+  ],
+  "tags": {
+    "addr:city": "Rotorua",
+    "addr:country": "NZ",
+    "addr:housenumber": "246",
+    "addr:street": "Fenton Street",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "name:ja": "カウントダウン ロトルア店",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "phone": "+64 7 350 3277",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9189/rotorua/rotorua-woolworths"
+  }
+},
+{
+  "type": "way",
+  "id": 141573701,
+  "center": {
+    "lat": -41.2701662,
+    "lon": 173.2816098
+  },
+  "nodes": [
+    1549544409,
+    12423425234,
+    12423425235,
+    12423425236,
+    12625113030,
+    1549544407,
+    12625113052,
+    1549544396,
+    1549544390,
+    1549544388,
+    12423425233,
+    12423425232,
+    12423425231,
+    1549544376,
+    1549544378,
+    1549544373,
+    1549544371,
+    1549544365,
+    1549544368,
+    2293276834,
+    1549544411,
+    1549544409
+  ],
+  "tags": {
+    "addr:city": "Nelson",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths (New Zealand supermarket chain)",
+    "building": "retail",
+    "building:levels": "1",
+    "check_date": "2025-03-16",
+    "name": "Woolworths",
+    "roof:levels": "0",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 142472986,
+  "center": {
+    "lat": -37.6949079,
+    "lon": 176.1084939
+  },
+  "nodes": [
+    1559184043,
+    1559184447,
+    6449166575,
+    6449166576,
+    1559184260,
+    1559184094,
+    1559184311,
+    1559184102,
+    1559184573,
+    1559184043
+  ],
+  "tags": {
+    "branch": "Bethlehem",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "official_name": "Woolworths Bethlehem",
+    "old_name": "Bethlehem Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 7 579 2862",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9143/tauranga/woolworths-bethlehem"
+  }
+},
+{
+  "type": "way",
+  "id": 144194203,
+  "center": {
+    "lat": -38.1900330,
+    "lon": 175.2099645
+  },
+  "nodes": [
+    1577771202,
+    1577771219,
+    8767742067,
+    8767742064,
+    1577771237,
+    1577771231,
+    8767742066,
+    8767742065,
+    1577771202
+  ],
+  "tags": {
+    "branch": "Otorohanga",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "check_date": "2024-04-08",
+    "name": "Woolworths",
+    "official_name": "Otorohanga Countdown",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "phone": "+64 7 873 4007",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9430/ototohanga/otorohanga-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 148286835,
+  "center": {
+    "lat": -37.7846271,
+    "lon": 176.3252728
+  },
+  "nodes": [
+    1613905559,
+    1613905566,
+    1613905564,
+    1613905556,
+    1613905559
+  ],
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:street": "Boucher Avenue",
+    "addr:suburb": "Te Puke",
+    "branch": "Te Puke",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "name:ja": "カウントダウン ティプーケ店",
+    "phone": "+64 7 573 0058",
+    "ref:linz:address_id": "830855",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 148781985,
+  "center": {
+    "lat": -39.4927340,
+    "lon": 176.9113899
+  },
+  "nodes": [
+    1618528802,
+    3609675183,
+    3609675182,
+    12543604458,
+    12543604457,
+    3609675179,
+    3609675185,
+    3609675186,
+    1618528788,
+    3609675189,
+    1618528806,
+    1618528805,
+    3604278241,
+    12543604461,
+    3609679893,
+    3609679897,
+    7644852576,
+    7644852575,
+    1618528814,
+    1618528818,
+    1618528802
+  ],
+  "tags": {
+    "addr:city": "Napier",
+    "addr:housenumber": "36",
+    "addr:postcode": "4110",
+    "addr:street": "Carlyle Street",
+    "addr:suburb": "Napier South",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "operator": "Countdown",
+    "phone": "+64 6 835 3643",
+    "ref:linz:address_id": "1579418",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz"
+  }
+},
+{
+  "type": "way",
+  "id": 148782007,
+  "center": {
+    "lat": -39.4929403,
+    "lon": 176.9134721
+  },
+  "nodes": [
+    4285854714,
+    1618528823,
+    1618528820,
+    1618528821,
+    1618528816,
+    1618528815,
+    1618528813,
+    1618528812,
+    1618528809,
+    1618528808,
+    1618528810,
+    1618528807,
+    1618528801,
+    4285828768,
+    1618528796,
+    4285854704,
+    4285854708,
+    4285854714
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "name:ja": "カウントダウン・ネイピア",
+    "operator": "Countdown",
+    "phone": "+64 6 834 1401",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz"
+  }
+},
+{
+  "type": "way",
+  "id": 154609241,
+  "center": {
+    "lat": -45.0971799,
+    "lon": 170.9705024
+  },
+  "nodes": [
+    1671302104,
+    1671302076,
+    1671302079,
+    1671302056,
+    6901466029,
+    6901466030,
+    6901466031,
+    1671302082,
+    1671302069,
+    4134508104,
+    1671302061,
+    1671302073,
+    6901466063,
+    6901466062,
+    1671302104
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "07:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 158624481,
+  "center": {
+    "lat": -45.8964341,
+    "lon": 170.5088827
+  },
+  "nodes": [
+    1707871031,
+    1707871018,
+    6494064623,
+    6494064624,
+    6494064625,
+    6494064626,
+    3848340311,
+    3848340309,
+    1707871037,
+    6494064634,
+    1707871047,
+    1707871049,
+    1707871052,
+    1707871056,
+    1707871058,
+    6494064632,
+    6494064631,
+    6494064630,
+    6494064629,
+    6494064633,
+    6494064627,
+    6494064628,
+    1707871031
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "commercial",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 160564053,
+  "center": {
+    "lat": -43.4914641,
+    "lon": 172.6117487
+  },
+  "nodes": [
+    1726195401,
+    8582090843,
+    8582090842,
+    8379708790,
+    1726195651,
+    9137069087,
+    1726195455,
+    1726195496,
+    10991427229,
+    10991427227,
+    10991427225,
+    1726195659,
+    1726195542,
+    1726195519,
+    1726195571,
+    1726195573,
+    1726195556,
+    8582090849,
+    8582090850,
+    1726195536,
+    1726195464,
+    10981863396,
+    12514704596,
+    8379708787,
+    10981863401,
+    1726195597,
+    1726195401
+  ],
+  "tags": {
+    "addr:city": "Christchurch",
+    "addr:country": "NZ",
+    "addr:housenumber": "85",
+    "addr:postcode": "8052",
+    "addr:street": "Main North Road",
+    "branch": "Northlands",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths NewZealand supermarket chain",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 06:00-00:00",
+    "phone": "+64 3 375 0092",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 167565675,
+  "center": {
+    "lat": -41.2073556,
+    "lon": 174.9056894
+  },
+  "nodes": [
+    1789617682,
+    13176279445,
+    1789617686,
+    13176279441,
+    1789617683,
+    1789617684,
+    13176279405,
+    1789617679,
+    1789617664,
+    13176276192,
+    13176276199,
+    1789617673,
+    1789617676,
+    1789617678,
+    1789617680,
+    1789617681,
+    1789617682
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "check_date": "2026-01-08",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su,PH 07:00-22:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 172472726,
+  "center": {
+    "lat": -40.3502898,
+    "lon": 175.6232818
+  },
+  "nodes": [
+    1833781268,
+    3722293567,
+    3722293568,
+    1833781254,
+    1833781248,
+    2100904096,
+    1833781257,
+    1833781268
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/"
+  }
+},
+{
+  "type": "way",
+  "id": 174551219,
+  "center": {
+    "lat": -36.9232643,
+    "lon": 174.7022478
+  },
+  "nodes": [
+    1852225352,
+    3879178012,
+    3879178003,
+    12695602187,
+    1852225331,
+    1852225330,
+    1852225344,
+    10049948180,
+    1852225352
+  ],
+  "tags": {
+    "addr:housenumber": "19-21",
+    "addr:street": "Donovan Street",
+    "branch": "Blockhouse Bay",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 175672476,
+  "center": {
+    "lat": -40.6202818,
+    "lon": 175.2868264
+  },
+  "nodes": [
+    1862398210,
+    5346103362,
+    5346103363,
+    3705993135,
+    1519202037,
+    1862398211,
+    1862398210
+  ],
+  "tags": {
+    "branch": "Levin",
+    "brand": "Woolworths",
+    "brand:website": "https://www.woolworths.co.nz",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 6 366 0050",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9102/levin/levin-woolworths"
+  }
+},
+{
+  "type": "way",
+  "id": 178452505,
+  "center": {
+    "lat": -37.7324564,
+    "lon": 175.2730566
+  },
+  "nodes": [
+    1888034062,
+    1888034048,
+    1888034104,
+    6104776775,
+    6104776774,
+    1888034118,
+    6104776779,
+    6104776777,
+    6104776776,
+    6104776778,
+    3824158393,
+    3824158394,
+    1888034062
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "PH,Mo-Su 07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 179073888,
+  "center": {
+    "lat": -37.7964692,
+    "lon": 175.2453271
+  },
+  "nodes": [
+    1894111412,
+    1894111407,
+    6067860949,
+    1894111420,
+    6917307259,
+    1894111423,
+    1894111425,
+    1894111422,
+    1894111424,
+    1894111412
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 180116055,
+  "center": {
+    "lat": -37.7462999,
+    "lon": 175.2344789
+  },
+  "nodes": [
+    1905523623,
+    1905523598,
+    11892828803,
+    11892828804,
+    11892828805,
+    11892828806,
+    11892828807,
+    1905523643,
+    11892828808,
+    3467415249,
+    3467415242,
+    11892828812,
+    11892828815,
+    11892828814,
+    11892828813,
+    1905523676,
+    1905523623
+  ],
+  "tags": {
+    "addr:city": "Hamilton",
+    "addr:housenumber": "8",
+    "addr:postcode": "3200",
+    "addr:street": "Eagle Way",
+    "addr:suburb": "Pukete",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+64 7 850 5091",
+    "ref:linz:address_id": "1566828",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 180773870,
+  "center": {
+    "lat": -40.2252395,
+    "lon": 175.5685062
+  },
+  "nodes": [
+    1912407590,
+    1912407591,
+    1912407592,
+    1912407594,
+    1912407596,
+    1912407599,
+    1912407604,
+    1912407597,
+    1912407608,
+    1912407610,
+    1912407618,
+    1912407609,
+    1912407606,
+    1912407593,
+    1912407590
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "supermarket",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 181031719,
+  "center": {
+    "lat": -37.2105899,
+    "lon": 174.9120059
+  },
+  "nodes": [
+    1914770980,
+    11367514513,
+    1914771002,
+    1914770956,
+    8816552886,
+    8816552890,
+    8816552889,
+    8816552887,
+    8816552888,
+    1914770980
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 182985384,
+  "center": {
+    "lat": -37.8923161,
+    "lon": 175.4706869
+  },
+  "nodes": [
+    1933498845,
+    1933498852,
+    1933498853,
+    1933498850,
+    1933498851,
+    1933498846,
+    1933498845
+  ],
+  "tags": {
+    "addr:city": "Cambridge",
+    "addr:postcode": "3434",
+    "addr:street": "Cnr Queen & Empire Street",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "check_date:opening_hours": "2023-06-30",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Woolworths Group New Zealand",
+    "phone": "+6478235971",
+    "shop": "supermarket",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 186823861,
+  "center": {
+    "lat": -36.3994756,
+    "lon": 174.6639769
+  },
+  "nodes": [
+    1975719967,
+    11013837559,
+    1975719955,
+    11013837566,
+    11013837567,
+    11013837570,
+    1975719956,
+    11013837569,
+    11013837568,
+    11013837565,
+    11013837564,
+    11013837571,
+    11013837563,
+    11013837572,
+    1975719966,
+    11013837562,
+    1975719967
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 186830906,
+  "center": {
+    "lat": -36.6140006,
+    "lon": 174.6810754
+  },
+  "nodes": [
+    1975796513,
+    6974471426,
+    10734058408,
+    6974471425,
+    3254930143,
+    1975796525,
+    7058816304,
+    3254930012,
+    3254930102,
+    1975796526,
+    6816538706,
+    3254930157,
+    5952737500,
+    1975796513
+  ],
+  "tags": {
+    "branch": "Silverdale",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "check_date": "2025-08-06",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su,PH 07:00-22:00",
+    "phone": "+64 9 421 9185",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 201306719,
+  "center": {
+    "lat": -40.3578057,
+    "lon": 175.6151052
+  },
+  "nodes": [
+    2112654293,
+    2112654349,
+    2112654313,
+    2112654343,
+    2112654293
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "level": "0",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 203703485,
+  "center": {
+    "lat": -35.6833989,
+    "lon": 174.3208346
+  },
+  "nodes": [
+    2137051558,
+    2137051304,
+    2137051568,
+    2137051548,
+    2137051529,
+    2137051342,
+    2137051560,
+    2137051771,
+    2137051558
+  ],
+  "tags": {
+    "branch": "Tikipunga",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 205602645,
+  "center": {
+    "lat": -41.1333305,
+    "lon": 174.8412318
+  },
+  "nodes": [
+    2155753401,
+    8332833016,
+    8332833015,
+    8332833014,
+    8332833013,
+    2155753428,
+    2155753417,
+    2155753429,
+    179329476,
+    179329473,
+    2155753392,
+    8332844520,
+    2155753386,
+    2155753385,
+    11374544427,
+    2155753387,
+    8332844517,
+    2155753393,
+    10609316676,
+    2155753401
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 215227028,
+  "center": {
+    "lat": -42.4489142,
+    "lon": 171.2138794
+  },
+  "nodes": [
+    2246321959,
+    2246321911,
+    2246321848,
+    2246321922,
+    2246321961,
+    2246321928,
+    2246321962,
+    2246321959
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "retail",
+    "check_date:opening_hours": "2023-01-11",
+    "name": "Woolworths",
+    "opening_hours": "07:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 216820187,
+  "center": {
+    "lat": -41.1097089,
+    "lon": 173.0108032
+  },
+  "nodes": [
+    2261636553,
+    2261636557,
+    2261636556,
+    4032640741,
+    5326340837,
+    4032640737,
+    2261636554,
+    2261636552,
+    2261636553
+  ],
+  "tags": {
+    "addr:city": "Motueka",
+    "addr:housenumber": "108",
+    "addr:postcode": "7120",
+    "addr:street": "High Street",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "07:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 217118877,
+  "center": {
+    "lat": -40.3508291,
+    "lon": 175.6055437
+  },
+  "nodes": [
+    2264256688,
+    2264256689,
+    2264256693,
+    2264256694,
+    2264256691,
+    2264256695,
+    2264256696,
+    2264256697,
+    2264256702,
+    2264256704,
+    2264256708,
+    2264256707,
+    2264256709,
+    2264256705,
+    2264256706,
+    2264256703,
+    2264256700,
+    2264256701,
+    2264256699,
+    2264256698,
+    4709252695,
+    2264256690,
+    2264256692,
+    2264256688
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 220075018,
+  "center": {
+    "lat": -40.3296308,
+    "lon": 175.6531079
+  },
+  "nodes": [
+    2291949516,
+    2291949518,
+    4439877661,
+    2291949519,
+    2291949517,
+    2291949516
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 220080005,
+  "center": {
+    "lat": -40.7534934,
+    "lon": 175.1408675
+  },
+  "nodes": [
+    2292008445,
+    2292008443,
+    3939214626,
+    3939214631,
+    2292008444,
+    2292008446,
+    2292008447,
+    2292008448,
+    2292008445
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "building:levels": "1",
+    "name": "Woolworths",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 220706882,
+  "center": {
+    "lat": -41.2729121,
+    "lon": 173.2775514
+  },
+  "nodes": [
+    2297985345,
+    2297985350,
+    12149482023,
+    2297985341,
+    12149482020,
+    2297985337,
+    2297985345
+  ],
+  "tags": {
+    "addr:housenumber": "35",
+    "addr:postcode": "7010",
+    "addr:street": "Saint Vincent Street",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "building:colour": "green",
+    "check_date": "2025-02-06",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "organic": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "phone": "+64 3 546 7443",
+    "shop": "supermarket",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.countdown.co.nz",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 221458690,
+  "center": {
+    "lat": -41.5138750,
+    "lon": 173.9534971
+  },
+  "nodes": [
+    2304912151,
+    4709514164,
+    2304912155,
+    2304912154,
+    2304912157,
+    2304912153,
+    2304912152,
+    2304912150,
+    2304912151
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "07:00-22:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 221606539,
+  "center": {
+    "lat": -39.0568052,
+    "lon": 174.0822910
+  },
+  "nodes": [
+    2306404182,
+    11755254898,
+    11755254900,
+    11755254899,
+    11755254901,
+    2306404181,
+    2306404191,
+    2306404184,
+    2306404189,
+    2306404192,
+    2306404205,
+    2306404206,
+    2306404188,
+    11755254897,
+    2306404198,
+    2306404182
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "check_date": "2024-01-10",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 229240921,
+  "center": {
+    "lat": -37.7937843,
+    "lon": 175.2870722
+  },
+  "nodes": [
+    2378669774,
+    2378669765,
+    2378669768,
+    2378669772,
+    2378669775,
+    2378669780,
+    2378669774
+  ],
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Anzac Parade",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building": "retail",
+    "diet:halal": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+6478382714",
+    "roof:shape": "flat",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 230524785,
+  "center": {
+    "lat": -43.9023546,
+    "lon": 171.7525776
+  },
+  "nodes": [
+    2390241604,
+    2390241605,
+    2390241612,
+    2390241613,
+    4109062897,
+    4109062919,
+    2390241604
+  ],
+  "tags": {
+    "addr:city": "Ashburton",
+    "branch": "Ashburton",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "check_date": "2025-12-23",
+    "name": "Woolworths",
+    "opening_hours": "08:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "phone": "+64 3 307 8156",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9181/ashburton/ashburton-woolworths?lat=-43.89601169309435&long=171.7712097814234&q=%20near%20Netherby,%20Ashburton&count=5"
+  }
+},
+{
+  "type": "way",
+  "id": 236038801,
+  "center": {
+    "lat": -37.7823177,
+    "lon": 175.2738334
+  },
+  "nodes": [
+    2441143216,
+    2441143211,
+    2441143214,
+    2441143210,
+    2441143220,
+    2441143223,
+    2441143222,
+    2441143227,
+    2441143217,
+    2441143224,
+    2441143216
+  ],
+  "tags": {
+    "addr:postcode": "3204",
+    "addr:street": "Anglesea Street",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "building:levels": "1",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 7 834 1490",
+    "shop": "supermarket",
+    "source": "Survey"
+  }
+},
+{
+  "type": "way",
+  "id": 257845984,
+  "center": {
+    "lat": -41.2573670,
+    "lon": 174.7658627
+  },
+  "nodes": [
+    2633069108,
+    2633069109,
+    2633069110,
+    2985766699,
+    2633069111,
+    7007024284,
+    3998721082,
+    3998721070,
+    2633069108
+  ],
+  "tags": {
+    "addr:city": "Wellington",
+    "addr:housenumber": "124",
+    "addr:street": "Churchill Drive",
+    "branch": "Crofton Downs",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "note": "Not exact shape until aerial photography catches up with reality",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Countdown",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 260670961,
+  "center": {
+    "lat": -36.8572968,
+    "lon": 174.6316809
+  },
+  "nodes": [
+    2661890993,
+    2661890998,
+    4815316376,
+    4815316381,
+    4815316380,
+    4815316385,
+    2661891011,
+    2661891009,
+    8830042277,
+    8830042169,
+    2661890993
+  ],
+  "tags": {
+    "branch": "Lincoln Road",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Lincoln Road Woolworths",
+    "old_name": "Lincoln Road Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 835 3985",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9038/henderson/lincoln-road-woolworths",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 264735468,
+  "center": {
+    "lat": -38.0119422,
+    "lon": 175.3270146
+  },
+  "nodes": [
+    2703874003,
+    2703874007,
+    2703874004,
+    2703873994,
+    2703873992,
+    2703873982,
+    12816725570,
+    12816725571,
+    2703873984,
+    2703873986,
+    2703873987,
+    2703874003
+  ],
+  "tags": {
+    "addr:housenumber": "180",
+    "addr:postcode": "3800",
+    "addr:street": "Sloane Street",
+    "branch": "Te Awamutu",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/"
+  }
+},
+{
+  "type": "way",
+  "id": 269479855,
+  "center": {
+    "lat": -43.5941567,
+    "lon": 172.3866405
+  },
+  "nodes": [
+    2746888021,
+    2746888022,
+    2746888023,
+    2746888024,
+    2746888025,
+    2746888026,
+    8253170534,
+    2746888028,
+    2746888021
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 274720457,
+  "center": {
+    "lat": -45.8927149,
+    "lon": 170.5019631
+  },
+  "nodes": [
+    2794031952,
+    2794031954,
+    6514280506,
+    3755250969,
+    8829480539,
+    6476774842,
+    3755250975,
+    2794031955,
+    2794031959,
+    5264610832,
+    5264610833,
+    2794031950,
+    2794031958,
+    5264610834,
+    6476774805,
+    6476774804,
+    6476774807,
+    6476774808,
+    6476774810,
+    6476774812,
+    6476774811,
+    6476774806,
+    2794031952
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 294902761,
+  "center": {
+    "lat": -43.5427645,
+    "lon": 172.5269090
+  },
+  "nodes": [
+    2985475298,
+    9882444635,
+    9882444636,
+    2985475295,
+    9882444627,
+    9882444626,
+    9882444625,
+    9882444628,
+    9882444630,
+    9882444629,
+    2985475316,
+    2985475318,
+    9882444631,
+    9882444632,
+    9882444633,
+    9882444634,
+    2985475299,
+    2985475301,
+    2985475298
+  ],
+  "tags": {
+    "addr:city": "Christchurch",
+    "addr:country": "NZ",
+    "addr:housenumber": "17",
+    "addr:postcode": "8042",
+    "addr:street": "Chappie Place",
+    "addr:suburb": "Hornby",
+    "branch": "Hornby",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-23:00",
+    "operator": "Woolworths Group New Zealand",
+    "phone": "+64 3 344 0450",
+    "ref:linz:address_id": "1660686",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 301171775,
+  "center": {
+    "lat": -36.9040942,
+    "lon": 174.7268780
+  },
+  "nodes": [
+    3052708114,
+    7669111208,
+    7669111205,
+    3052708115,
+    12790619540,
+    12790619539,
+    12790619538,
+    12790619537,
+    12790619532,
+    12790619547,
+    12790619546,
+    4956225743,
+    12790619528,
+    4956225744,
+    4956225745,
+    12537896530,
+    3052708112,
+    3496544854,
+    3496544851,
+    12790619544,
+    12790619543,
+    12790619542,
+    12790619545,
+    3496544859,
+    3052708114
+  ],
+  "tags": {
+    "branch": "Mount Roskill",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "building:levels": "1",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su,PH 07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 301747974,
+  "center": {
+    "lat": -41.2222610,
+    "lon": 174.8725799
+  },
+  "nodes": [
+    3058660431,
+    3058663133,
+    3937007943,
+    3937007972,
+    3058660431
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "check_date": "2026-01-05",
+    "name": "Woolworths",
+    "opening_hours": "06:00-23:00",
+    "shop": "supermarket",
+    "start_date": "2013-05-28"
+  }
+},
+{
+  "type": "way",
+  "id": 303929470,
+  "center": {
+    "lat": -39.9954411,
+    "lon": 176.5577050
+  },
+  "nodes": [
+    3084394950,
+    3084394960,
+    3772694736,
+    3772694737,
+    3772694735,
+    3772694738,
+    3772694739,
+    3772694740,
+    3772694743,
+    3772694741,
+    3084395029,
+    3084395017,
+    3084394950
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 305600921,
+  "center": {
+    "lat": -43.3073825,
+    "lon": 172.5988696
+  },
+  "nodes": [
+    3102505807,
+    5036357084,
+    5036357085,
+    5036357087,
+    5036357086,
+    3102505822,
+    3102505814,
+    3102505811,
+    5036357074,
+    5036357075,
+    3102505810,
+    5036357076,
+    5036357077,
+    5036357078,
+    5036357079,
+    5036357080,
+    5036357081,
+    5036357082,
+    5036357083,
+    5036357090,
+    5036357089,
+    5036357088,
+    3102505807
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 306469875,
+  "center": {
+    "lat": -36.5883197,
+    "lon": 174.6950561
+  },
+  "nodes": [
+    9255843317,
+    9255818919,
+    9255815122,
+    9255815121,
+    9255815120,
+    9255815023,
+    9255814728,
+    9255814727,
+    9255815024,
+    9255815025,
+    9255814726,
+    9255814725,
+    3114120292,
+    3114120278,
+    9255843317
+  ],
+  "tags": {
+    "LINZ2OSM:dataset": "ac_hibiscus",
+    "LINZ2OSM:layer": "ac_buildings",
+    "LINZ2OSM:source_version": "2015-04-13",
+    "addr:city": "Ōrewa",
+    "addr:housenumber": "5-11",
+    "addr:postcode": "0931",
+    "addr:street": "Moenui Avenue",
+    "addr:suburb": "Ōrewa",
+    "attribution": "http://www.aucklandcouncil.govt.nz/EN/ratesbuildingproperty/propertyinformation/GIS_maps/Pages/opendata.aspx",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "building:levels": "2",
+    "check_date": "2025-07-27",
+    "layer": "1",
+    "linz2osm:objectid": "2346336",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Sa 08:00-21:00;Mo-Su,PH 07:00-21:00;PH open",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:notes": "yes",
+    "payment:visa": "yes",
+    "phone": "+64 9 421 9300",
+    "ref:linz:address_id": "1494388",
+    "shop": "supermarket",
+    "source": "Auckland Council",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 319666774,
+  "center": {
+    "lat": -36.7967293,
+    "lon": 174.7779397
+  },
+  "nodes": [
+    3261191991,
+    3261191990,
+    8005271780,
+    3261191992,
+    4243856348,
+    4243862106,
+    4243862089,
+    8005271781,
+    3261191991
+  ],
+  "tags": {
+    "branch": "Hauraki Corner",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Hauraki Corner Woolworths",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "phone": "+64 9 255 9731",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9060/belmont-hauraki/hauraki-corner-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 321758425,
+  "center": {
+    "lat": -39.0750360,
+    "lon": 174.0330487
+  },
+  "nodes": [
+    12917108394,
+    12917108393,
+    12917108392,
+    3285259776,
+    12917108391,
+    12917108390,
+    12917108389,
+    12917108388,
+    12917108387,
+    12917108386,
+    3285259788,
+    3285259766,
+    12917108394
+  ],
+  "tags": {
+    "addr:city": "New Plymouth",
+    "addr:housename": "Countdown Spotswood",
+    "addr:housenumber": "2",
+    "addr:postcode": "4310",
+    "addr:street": "Manadon Street",
+    "branch": "Spotswood",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "check_date:opening_hours": "2025-02-02",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su,PH 07:00-22:00",
+    "phone": "+64 6 751 0485",
+    "ref:linz:building_id": "4374289",
+    "shop": "supermarket",
+    "source": "esri/LINZ_NZ_Buildings",
+    "website": "https://www.countdown.co.nz/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 327032388,
+  "center": {
+    "lat": -36.8795037,
+    "lon": 174.8521990
+  },
+  "nodes": [
+    3337444471,
+    9268873375,
+    9268873374,
+    9268873378,
+    9268873379,
+    9268873373,
+    9268873372,
+    3337444474,
+    3337444473,
+    9268879199,
+    9268879238,
+    9268879234,
+    9268879239,
+    9268879240,
+    3337444490,
+    3337444492,
+    9268873384,
+    9268879194,
+    9268879196,
+    3337444486,
+    9268879295,
+    9268873376,
+    9268873377,
+    3337444471
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 327559769,
+  "center": {
+    "lat": -37.5640641,
+    "lon": 175.1587397
+  },
+  "nodes": [
+    3343616650,
+    3343616659,
+    3343616658,
+    3343616654,
+    3343616655,
+    3343616649,
+    3343616650
+  ],
+  "tags": {
+    "branch": "Huntly",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 330486076,
+  "center": {
+    "lat": -36.8961001,
+    "lon": 174.9326181
+  },
+  "nodes": [
+    3374543240,
+    3374543210,
+    3374543211,
+    3374543209,
+    3374543197,
+    3374543238,
+    11111300489,
+    3374543241,
+    3374543246,
+    3374543244,
+    3374543239,
+    3374543240
+  ],
+  "tags": {
+    "addr:city": "Auckland",
+    "addr:housenumber": "35",
+    "addr:postcode": "2014",
+    "addr:street": "Cook Street",
+    "addr:suburb": "Howick",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths Supermarkets",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "phone": "+64 9 535 9738",
+    "shop": "supermarket",
+    "website": "http://Woolworths.co.nz"
+  }
+},
+{
+  "type": "way",
+  "id": 332685427,
+  "center": {
+    "lat": -40.8761435,
+    "lon": 175.0650414
+  },
+  "nodes": [
+    3398281953,
+    3398281954,
+    3398281955,
+    3398281956,
+    3403883084,
+    3398281959,
+    3398281960,
+    3398281953
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "retail",
+    "check_date": "2025-03-12",
+    "name": "Woolworths",
+    "opening_hours": "07:00-22:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 337358027,
+  "center": {
+    "lat": -37.0174680,
+    "lon": 174.8639672
+  },
+  "nodes": [
+    3444525743,
+    8805481263,
+    8805481264,
+    7774755453,
+    8805481266,
+    7774755447,
+    3444525760,
+    3658372275,
+    8805481260,
+    8805481261,
+    10956462980,
+    8805481262,
+    3444525744,
+    3444525743
+  ],
+  "tags": {
+    "branch": "Manurewa",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 10:00-22:00",
+    "operator": "Countdown",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 338723419,
+  "center": {
+    "lat": -36.6772404,
+    "lon": 174.4511724
+  },
+  "nodes": [
+    3458625007,
+    3458624989,
+    3458624959,
+    3458624956,
+    3458624954,
+    3458624953,
+    3458624951,
+    3458624952,
+    3458624935,
+    3458624938,
+    3458624925,
+    3458624934,
+    3458625007
+  ],
+  "tags": {
+    "addr:housenumber": "43",
+    "addr:postcode": "0800",
+    "addr:street": "Commercial Road",
+    "addr:suburb": "Helensville",
+    "branch": "Helensville",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "phone": "+64 9 420 6509",
+    "ref:linz:address_id": "1521123",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 340817067,
+  "center": {
+    "lat": -38.1205317,
+    "lon": 176.2280870
+  },
+  "nodes": [
+    3480678242,
+    3480678238,
+    3480678248,
+    3480678257,
+    3480678242
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths Supermarkets",
+    "building": "retail",
+    "building:levels": "1",
+    "check_date": "2024-03-23",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "shop": "supermarket",
+    "toilets": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 342715319,
+  "center": {
+    "lat": -37.6568351,
+    "lon": 175.5274418
+  },
+  "nodes": [
+    3496827180,
+    3496827422,
+    3496827428,
+    3496827446,
+    3496827489,
+    3496827454,
+    3496827418,
+    3496827410,
+    3496827180
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "check_date": "2026-01-08",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 343667345,
+  "center": {
+    "lat": -45.8802000,
+    "lon": 170.3523682
+  },
+  "nodes": [
+    3504723885,
+    3504723891,
+    7574245590,
+    7574245589,
+    7574245588,
+    7574245587,
+    7574237984,
+    7574245585,
+    7574245586,
+    3504723886,
+    3504723885
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 353564209,
+  "center": {
+    "lat": -36.7393795,
+    "lon": 174.7528072
+  },
+  "nodes": [
+    3593742230,
+    3593742288,
+    3593742300,
+    3593742249,
+    3593742230
+  ],
+  "tags": {
+    "branch": "Mairangi Bay",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Mairangi Bay Woolworths",
+    "old_name": "Mairangi Bay Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 478 7402",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9248/mairangi-bay/mairangi-bay-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 360491736,
+  "center": {
+    "lat": -37.9568123,
+    "lon": 176.9948335
+  },
+  "nodes": [
+    3650303509,
+    3650303625,
+    3650303652,
+    3650303644,
+    3650303653,
+    3650303634,
+    3650303509
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 362711104,
+  "center": {
+    "lat": -37.7010903,
+    "lon": 176.1580352
+  },
+  "nodes": [
+    9685155653,
+    3669763009,
+    9685155647,
+    9685155645,
+    9685155644,
+    9685155646,
+    3669763000,
+    3669763010,
+    6123842275,
+    6123842288,
+    6123842282,
+    3669762986,
+    3669763011,
+    3669763068,
+    9685155654,
+    9685155655,
+    3669763050,
+    3669763033,
+    3669763024,
+    9685155653
+  ],
+  "tags": {
+    "addr:city": "Tauranga",
+    "addr:country": "NZ",
+    "addr:housenumber": "618",
+    "addr:postcode": "3112",
+    "addr:province": "Bay of Plenty",
+    "addr:street": "Cameron Road",
+    "addr:suburb": "Tauranga South",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "building:levels": "2",
+    "height": "10",
+    "name": "Woolworths",
+    "opening_hours": "Tu-Su 07:00-22:00;Mo 13:00-22:00",
+    "phone": "+64 7 578 0055",
+    "ref:linz:address_id": "792548",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9162/tauranga/tauranga-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 370527634,
+  "center": {
+    "lat": -40.0679617,
+    "lon": 175.3782441
+  },
+  "nodes": [
+    3742216732,
+    3742216731,
+    3742216736,
+    3742216742,
+    3742216741,
+    3742216739,
+    3742216732
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket",
+    "source": "local knowledge"
+  }
+},
+{
+  "type": "way",
+  "id": 370661504,
+  "center": {
+    "lat": -39.9254680,
+    "lon": 175.0381641
+  },
+  "nodes": [
+    3743577642,
+    12960144306,
+    3743577653,
+    3743577655,
+    3743577650,
+    3743577642
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 06:00-24:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 371300268,
+  "center": {
+    "lat": -39.5876838,
+    "lon": 174.2811406
+  },
+  "nodes": [
+    3748763972,
+    10219174280,
+    10219174283,
+    10219174282,
+    10219174281,
+    3748764011,
+    10219174271,
+    3748764138,
+    3748764178,
+    3748764166,
+    10219174286,
+    10219174287,
+    10219174284,
+    10219174285,
+    3748763972
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "07:00-22:00",
+    "phone": "+64 6 278 0026",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 372171870,
+  "center": {
+    "lat": -38.6612549,
+    "lon": 178.0170791
+  },
+  "nodes": [
+    3757053521,
+    3757053498,
+    3757053476,
+    3757053502,
+    3757053521
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 373810395,
+  "center": {
+    "lat": -36.7976362,
+    "lon": 174.6477910
+  },
+  "nodes": [
+    3772186147,
+    5304364176,
+    10269054766,
+    5304364175,
+    3772186153,
+    10269054764,
+    10269054765,
+    8310691674,
+    3772186152,
+    11408656522,
+    3772186144,
+    3772186147
+  ],
+  "tags": {
+    "addr:city": "Auckland",
+    "addr:housenumber": "124",
+    "addr:postcode": "0618",
+    "addr:street": "Hobsonville Road",
+    "addr:suburb": "Hobsonville",
+    "branch": "Hobsonville",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths Supermarkets",
+    "building": "retail",
+    "building:levels": "3",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 416 7516",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9551/hobsonville/hobsonville-woolworths"
+  }
+},
+{
+  "type": "way",
+  "id": 376497707,
+  "center": {
+    "lat": -35.7304790,
+    "lon": 174.3273604
+  },
+  "nodes": [
+    3799093634,
+    8953036503,
+    8953036501,
+    8953036499,
+    5038913066,
+    5038913067,
+    3799093610,
+    3799093463,
+    3799093479,
+    3799093432,
+    3799093449,
+    3799093489,
+    3799093498,
+    3799093634
+  ],
+  "tags": {
+    "branch": "Whangarei",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Whangarei Countdown",
+    "opening_hours": "Mo-Su 08:00-22:00",
+    "phone": "+64 9 430 4300",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9195/whangarei/whangarei-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 376609105,
+  "center": {
+    "lat": -35.7144550,
+    "lon": 174.3220370
+  },
+  "nodes": [
+    3800101814,
+    3800101809,
+    3800101823,
+    3800101826,
+    3800101814
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 381450075,
+  "center": {
+    "lat": -46.4122328,
+    "lon": 168.3581913
+  },
+  "nodes": [
+    3846517948,
+    3846517770,
+    3846517771,
+    3846517951,
+    3846517950,
+    3846518077,
+    12953932410,
+    3846518076,
+    12953932407,
+    3846517949,
+    3846517948
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building": "yes",
+    "check_date": "2024-04-12",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 08:00-00:00",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 385641108,
+  "center": {
+    "lat": -45.8807166,
+    "lon": 170.4799932
+  },
+  "nodes": [
+    3889758426,
+    3889758433,
+    3889758447,
+    3889758444,
+    3889758442,
+    3889758435,
+    3889758426
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 386278821,
+  "center": {
+    "lat": -37.7785145,
+    "lon": 175.2992588
+  },
+  "nodes": [
+    3896016443,
+    11584163527,
+    11584163528,
+    11584163529,
+    11584163526,
+    3896016447,
+    3896017059,
+    3896016454,
+    3896016443
+  ],
+  "tags": {
+    "addr:city": "Hamilton",
+    "addr:street": "Peachgrove Road",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 396340088,
+  "center": {
+    "lat": -41.1866491,
+    "lon": 174.8311661
+  },
+  "nodes": [
+    3991536291,
+    3991536302,
+    3991536331,
+    3991536330,
+    3991536341,
+    3991536333,
+    6800975594,
+    3991536291
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 398684721,
+  "center": {
+    "lat": -41.5097836,
+    "lon": 173.9351468
+  },
+  "nodes": [
+    4014350094,
+    4014350025,
+    4014350020,
+    4014349999,
+    4014349989,
+    4014350048,
+    4014350050,
+    4014350086,
+    4014350094
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 410136297,
+  "center": {
+    "lat": -41.3118578,
+    "lon": 173.2345732
+  },
+  "nodes": [
+    4120096566,
+    10177767597,
+    10177767598,
+    10177767599,
+    10177767600,
+    4120096576,
+    10177767602,
+    4120096793,
+    4120096581,
+    10177767601,
+    4120096566
+  ],
+  "tags": {
+    "branch": "Stoke",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "retail",
+    "diet:halal": "yes",
+    "diet:kosher": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 412567191,
+  "center": {
+    "lat": -44.4023035,
+    "lon": 171.2546092
+  },
+  "nodes": [
+    4694178557,
+    4139647376,
+    4139647371,
+    4139647368,
+    4139647385,
+    4139647386,
+    6512898982,
+    4139647397,
+    4139647398,
+    4139647392,
+    4139647393,
+    4694178557
+  ],
+  "tags": {
+    "branch": "Timaru",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 428124737,
+  "center": {
+    "lat": -35.2291912,
+    "lon": 173.9458475
+  },
+  "nodes": [
+    4272688371,
+    4272688372,
+    4272688374,
+    4272688373,
+    4272688371
+  ],
+  "tags": {
+    "addr:city": "Kerikeri",
+    "addr:postcode": "0230",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "name:ja": "カウントダウン",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9502/kerikeri/kerikeri-woolworths"
+  }
+},
+{
+  "type": "way",
+  "id": 463037732,
+  "center": {
+    "lat": -39.0786141,
+    "lon": 174.0832836
+  },
+  "nodes": [
+    4583541705,
+    4583541704,
+    9536191607,
+    9536191606,
+    9536191612,
+    9536191614,
+    9536191613,
+    9536191605,
+    4583541703,
+    9536191604,
+    4583541702,
+    9536191609,
+    9536191610,
+    9536191611,
+    9536191608,
+    4583541705
+  ],
+  "tags": {
+    "addr:city": "New Plymouth",
+    "addr:country": "NZ",
+    "addr:housenumber": "30",
+    "addr:street": "Hori Street",
+    "addr:suburb": "Vogeltown",
+    "branch": "Vogeltown",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "phone": "+64 6 824 8112",
+    "ref:linz:address_id": "1846837",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 463037783,
+  "center": {
+    "lat": -39.0474853,
+    "lon": 174.1149950
+  },
+  "nodes": [
+    12917414829,
+    12917414828,
+    12917414827,
+    12917414826,
+    12917414825,
+    12917414824,
+    4583542121,
+    12917414823,
+    12917414822,
+    4583542120,
+    4583542123,
+    4583706178,
+    4583706177,
+    4583542122,
+    12917414829
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "commercial",
+    "name": "Woolworths",
+    "ref:linz:building_id": "4348369",
+    "shop": "supermarket",
+    "source": "esri/LINZ_NZ_Buildings"
+  }
+},
+{
+  "type": "way",
+  "id": 494788907,
+  "center": {
+    "lat": -36.8341553,
+    "lon": 175.6949828
+  },
+  "nodes": [
+    4865401468,
+    4865401465,
+    4865401466,
+    4865401467,
+    4865401468
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "07:00- 21:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 509402543,
+  "center": {
+    "lat": -36.9094509,
+    "lon": 174.8372407
+  },
+  "nodes": [
+    4986382497,
+    10129140141,
+    4986382498,
+    10129140171,
+    4986382495,
+    778171794,
+    4986382496,
+    4986382499,
+    10129140178,
+    10129140172,
+    3090071564,
+    4986382497
+  ],
+  "tags": {
+    "branch": "Mt Wellington",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 515708671,
+  "center": {
+    "lat": -37.6687738,
+    "lon": 176.1540215
+  },
+  "nodes": [
+    5035858872,
+    5035858858,
+    5035858864,
+    5035858857,
+    5035858870,
+    10174922863,
+    10174922860,
+    5035858848,
+    5035858872
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 515726019,
+  "center": {
+    "lat": -37.5600620,
+    "lon": 175.9160064
+  },
+  "nodes": [
+    5035977020,
+    5035977603,
+    5035977551,
+    5035977595,
+    5035977020
+  ],
+  "tags": {
+    "addr:housenumber": "123/131",
+    "addr:postcode": "3320",
+    "addr:street": "Main Road",
+    "branch": "Katikati",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "building:levels": "1",
+    "check_date:opening_hours": "2026-02-21",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "phone": "+6475494603",
+    "shop": "supermarket",
+    "website": "https://countdown.co.nz/"
+  }
+},
+{
+  "type": "way",
+  "id": 530480423,
+  "center": {
+    "lat": -36.9657744,
+    "lon": 174.8240973
+  },
+  "nodes": [
+    5151218408,
+    5151218405,
+    10901088449,
+    10901088450,
+    10901088451,
+    10901088452,
+    10901088453,
+    10901088454,
+    10901088455,
+    10901088456,
+    5151218406,
+    10901088457,
+    10901088458,
+    10901088459,
+    5151218407,
+    5151218408
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 534688713,
+  "center": {
+    "lat": -38.2224750,
+    "lon": 175.8733997
+  },
+  "nodes": [
+    5184949516,
+    5184949511,
+    5184949510,
+    5184949506,
+    5184949516
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 540281086,
+  "center": {
+    "lat": -41.5286950,
+    "lon": 173.9553815
+  },
+  "nodes": [
+    5227194213,
+    5227194214,
+    5227194215,
+    5227194216,
+    5227194217,
+    5227194218,
+    5227194219,
+    5227194220,
+    5227194213
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 540962413,
+  "center": {
+    "lat": -43.4898606,
+    "lon": 172.5477102
+  },
+  "nodes": [
+    5232164009,
+    5232164010,
+    5232164011,
+    4851247071,
+    4851247072,
+    5232164009
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths (New Zealand supermarket chain)",
+    "building": "retail",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 545947210,
+  "center": {
+    "lat": -41.1207736,
+    "lon": 174.8669722
+  },
+  "nodes": [
+    5276460456,
+    5276460457,
+    10220665643,
+    10841620821,
+    5276460458,
+    10841620838,
+    10841620840,
+    10841620841,
+    5276460459,
+    5276460456
+  ],
+  "tags": {
+    "addr:city": "Porirua",
+    "addr:housenumber": "3",
+    "addr:postcode": "5024",
+    "addr:street": "Whitford Brown Avenue",
+    "addr:suburb": "Papakōwhai",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "building:levels": "1",
+    "level": "1",
+    "name": "Woolworths",
+    "opening_hours": "07:00-22:00",
+    "operator": "Countdown",
+    "ref:linz:address_id": "1449235",
+    "roof:levels": "0",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 587376651,
+  "center": {
+    "lat": -41.2839783,
+    "lon": 174.7375584
+  },
+  "nodes": [
+    5610742306,
+    10769661664,
+    5610742305,
+    5610742304,
+    6043253317,
+    10769661665,
+    5610743291,
+    5610742306
+  ],
+  "tags": {
+    "LINZ2OSM:dataset": "kx_wellington_city_council",
+    "LINZ2OSM:layer": "wcc_buildings",
+    "LINZ2OSM:source_version": "2015-02-02",
+    "addr:postcode": "6012",
+    "addr:street": "Karori Road",
+    "attribution": "https://koordinates.com/publisher/wcc/",
+    "branch": "Karori",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "check_date": "2025-10-22",
+    "linz2osm:objectid": "29034.0",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+64 4 464 3000",
+    "shop": "supermarket",
+    "source": "Wellington City Council - photo 1999, 0.15m",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 625745945,
+  "center": {
+    "lat": -36.8002159,
+    "lon": 174.7449785
+  },
+  "nodes": [
+    5907965609,
+    5907965610,
+    5907965611,
+    5907965612,
+    5907965613,
+    5907965614,
+    5907965615,
+    5907965616,
+    5907965609
+  ],
+  "tags": {
+    "branch": "Northcote",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Northcote Woolworths",
+    "opening_hours": "Mo-Su 08:00-20:00",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/"
+  }
+},
+{
+  "type": "way",
+  "id": 710588853,
+  "center": {
+    "lat": -36.7317867,
+    "lon": 174.7207390
+  },
+  "nodes": [
+    9830109695,
+    10718770518,
+    10718770537,
+    10718770519,
+    10718770520,
+    10718770538,
+    10718770521,
+    9830109693,
+    6680849756,
+    10738426608,
+    10738426609,
+    9830109696,
+    10718770515,
+    9830109694,
+    10718770517,
+    9830109695
+  ],
+  "tags": {
+    "addr:housenumber": "65",
+    "addr:street": "Greville Road",
+    "addr:suburb": "Pinehill",
+    "branch": "Greville Road",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "layer": "1",
+    "name": "Woolworths",
+    "official_name": "Greville Road Woolworths",
+    "old_name": "Greville Road Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 478 2720",
+    "shop": "supermarket",
+    "start_date": "2022",
+    "website": "https://www.woolworths.co.nz/store-finder/9171/pinehill/greville-road-woolworths"
+  }
+},
+{
+  "type": "way",
+  "id": 782557270,
+  "center": {
+    "lat": -36.8804622,
+    "lon": 174.6322675
+  },
+  "nodes": [
+    608593258,
+    10160912938,
+    7307534757,
+    7307534759,
+    7307534760,
+    7307534761,
+    7307534762,
+    7307534763,
+    608593258
+  ],
+  "tags": {
+    "addr:city": "Auckland",
+    "branch": "Henderson",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building:part": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 09:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 879150392,
+  "center": {
+    "lat": -36.7721827,
+    "lon": 174.7662684
+  },
+  "nodes": [
+    8178698356,
+    8178698363,
+    815827375,
+    8178698357,
+    8178698358,
+    8178698359,
+    8178698360,
+    8178698361,
+    8178698527,
+    8178698362,
+    815823978,
+    3571718842,
+    8178698589,
+    8178698584,
+    4514682848,
+    3571718827,
+    4514682849,
+    8178698356
+  ],
+  "tags": {
+    "barrier": "wall",
+    "branch": "Milford",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "indoor": "room",
+    "level": "0",
+    "name": "Woolworths",
+    "official_name": "Milford Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 486 0374",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/stores/auckland/milford-cd",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 895819785,
+  "center": {
+    "lat": -43.9092880,
+    "lon": 171.7415702
+  },
+  "nodes": [
+    8327057660,
+    8327057661,
+    8327057662,
+    8327057663,
+    8327057660
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "building": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su,PH 08:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 911698068,
+  "center": {
+    "lat": -37.7221395,
+    "lon": 175.2585983
+  },
+  "nodes": [
+    8465176569,
+    8465176570,
+    8465176571,
+    8465176572,
+    8465176573,
+    8465176574,
+    8465176575,
+    8465176576,
+    8465176577,
+    8465176578,
+    8465176569
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "roof:shape": "flat",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 944988871,
+  "center": {
+    "lat": -37.0356720,
+    "lon": 174.9081424
+  },
+  "nodes": [
+    8748600719,
+    8748600787,
+    12675595849,
+    12675595848,
+    9981075009,
+    9981075008,
+    8748600720,
+    8748600765,
+    8748600766,
+    8748600767,
+    9981075014,
+    9981075015,
+    9981075016,
+    9981075117,
+    9981075118,
+    9981075119,
+    9981075120,
+    8748600721,
+    8748600722,
+    8748600723,
+    8748600771,
+    9981075012,
+    9981075013,
+    8748600772,
+    8748600770,
+    9981075183,
+    8748600719
+  ],
+  "tags": {
+    "branch": "Waiata Shores",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Waiata Shores Countdown",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+64 9 264 1049",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9464/takanini/waiata-shores-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 952129914,
+  "center": {
+    "lat": -37.2450369,
+    "lon": 175.0227724
+  },
+  "nodes": [
+    8812821156,
+    12005038793,
+    5313437425,
+    9910617872,
+    9910617871,
+    12005038790,
+    8812821157,
+    9910617892,
+    9910617868,
+    12005038781,
+    9910624518,
+    9910617869,
+    12005038789,
+    12005038786,
+    8812821156
+  ],
+  "tags": {
+    "addr:housenumber": "58",
+    "addr:street": "Great South Road",
+    "addr:suburb": "Pōkeno",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "ref:linz:address_id": "2091164",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 955639277,
+  "center": {
+    "lat": -35.9399109,
+    "lon": 173.8723322
+  },
+  "nodes": [
+    3921446324,
+    8844499266,
+    8844499265,
+    8844499264,
+    8844499263,
+    8844499262,
+    8844499261,
+    8844499260,
+    8844499259,
+    8844499258,
+    8844499257,
+    8844499256,
+    8844499255,
+    8844499254,
+    3921446324
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket",
+    "source": "LINZ"
+  }
+},
+{
+  "type": "way",
+  "id": 960045397,
+  "center": {
+    "lat": -41.2607572,
+    "lon": 174.9445936
+  },
+  "nodes": [
+    8882531444,
+    9981601015,
+    9981601014,
+    9981601011,
+    9981601012,
+    9981619821,
+    8882531445,
+    8882531446,
+    8882531447,
+    8882531450,
+    9981601010,
+    8882531451,
+    9981601009,
+    8882531452,
+    8912785323,
+    9981601002,
+    8882531444
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 985468069,
+  "center": {
+    "lat": -36.9919145,
+    "lon": 174.8826498
+  },
+  "nodes": [
+    9110462996,
+    9110462997,
+    9110462998,
+    9110462999,
+    9110463000,
+    9110463003,
+    296289238,
+    296289239,
+    296289168,
+    9110463402,
+    9110463401,
+    9110463406,
+    9110463403,
+    9110462996
+  ],
+  "tags": {
+    "barrier": "wall",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "check_date": "2024-11-14",
+    "indoor": "room",
+    "level": "1",
+    "name": "Woolworths",
+    "name:ja": "カウントダウン マヌカウシティーモール店",
+    "payment:american_express": "yes",
+    "payment:cash": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+64 9 255 2424",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1013884960,
+  "center": {
+    "lat": -43.5111733,
+    "lon": 172.5572753
+  },
+  "nodes": [
+    4692013489,
+    9354105435,
+    9354111017,
+    1526205002,
+    9354105436,
+    9354110119,
+    9354110118,
+    9354110128,
+    9354110817,
+    4692013489
+  ],
+  "tags": {
+    "addr:city": "Christchurch",
+    "addr:country": "NZ",
+    "addr:postcode": "8042",
+    "branch": "Avonhead",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Woolworths New Zealand",
+    "indoor": "area",
+    "level": "0",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "operator": "Woolworths Group New Zealand",
+    "phone:NZ": "0800 404 040",
+    "shop": "supermarket",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1051219220,
+  "center": {
+    "lat": -37.6738124,
+    "lon": 176.2220721
+  },
+  "nodes": [
+    9660239473,
+    9660239659,
+    9660239661,
+    9660239666,
+    9660239667,
+    9660230308,
+    9660230307,
+    9660239675,
+    9660239674,
+    9660239672,
+    7820862465,
+    7820862464,
+    7820862462,
+    7820862451,
+    9660230312,
+    9660239473
+  ],
+  "tags": {
+    "barrier": "wall",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "indoor": "room",
+    "level": "0",
+    "name": "Woolworths",
+    "shop": "supermarket",
+    "website": "https://countdown.co.nz"
+  }
+},
+{
+  "type": "way",
+  "id": 1074404062,
+  "center": {
+    "lat": -36.8466143,
+    "lon": 174.7334460
+  },
+  "nodes": [
+    9854859553,
+    5428173560,
+    12914838800,
+    12914838799,
+    9854859550,
+    12914838798,
+    12914838797,
+    12914838796,
+    9854859549,
+    9854859551,
+    9854859552,
+    9969195246,
+    9854859553
+  ],
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:street": "Kelmarna Avenue",
+    "addr:suburb": "Herne Bay",
+    "branch": "Herne Bay",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Countdown Metro Herne Bay",
+    "opening_date": "2022-06-23",
+    "opening_hours": "Mo-Su 07:00-21:00",
+    "phone": "+64 9 376 7279",
+    "ref:linz:address_id": "1074562",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/store-finder/9249/herne-bay/metro-herne-bay"
+  }
+},
+{
+  "type": "way",
+  "id": 1082617978,
+  "center": {
+    "lat": -43.4477510,
+    "lon": 172.6283488
+  },
+  "nodes": [
+    9921821345,
+    9921821346,
+    9921821347,
+    9921821348,
+    9921821349,
+    9921821350,
+    9921821345
+  ],
+  "tags": {
+    "addr:city": "Christchurch",
+    "addr:housenumber": "755",
+    "addr:postcode": "8051",
+    "addr:street": "Main North Road",
+    "addr:suburb": "Belfast",
+    "branch": "Belfast",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "retail",
+    "construction": "supermarket",
+    "email": "general.belfast@countdown.co.nz",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Countdown",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "phone": "+64 3 323 7075",
+    "ref:linz:address_id": "216379",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/"
+  }
+},
+{
+  "type": "way",
+  "id": 1106548793,
+  "center": {
+    "lat": -39.6382709,
+    "lon": 176.8420668
+  },
+  "nodes": [
+    10125797771,
+    10125797772,
+    10125797773,
+    10125797774,
+    10125797775,
+    10125797776,
+    10125797777,
+    10125797778,
+    10125797779,
+    10125797780,
+    10125797771
+  ],
+  "tags": {
+    "branch": "Hastings",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 1160382780,
+  "center": {
+    "lat": -46.2363735,
+    "lon": 169.7410674
+  },
+  "nodes": [
+    10792266065,
+    10792266066,
+    10792266067,
+    10792266068,
+    10792266069,
+    10792266070,
+    10792266071,
+    10792266072,
+    10792266074,
+    10792266073,
+    10792266065
+  ],
+  "tags": {
+    "branch": "Balclutha",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "official_name": "Balclutha Woolworths",
+    "old_name": "Balclutha Countdown",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "phone": "+64 3 418 2900",
+    "shop": "supermarket",
+    "start_date": "2022-05",
+    "website": "https://www.countdown.co.nz/store-finder/9459/balclutha/balclutha-woolworths"
+  }
+},
+{
+  "type": "way",
+  "id": 1162435891,
+  "center": {
+    "lat": -40.3709432,
+    "lon": 175.5810257
+  },
+  "nodes": [
+    10810954385,
+    10810954386,
+    10810954387,
+    10810954388,
+    10811026614,
+    10810954389,
+    10810954390,
+    10810954391,
+    10810954392,
+    10810954393,
+    10810954394,
+    10810954395,
+    10810954396,
+    10810954397,
+    10810954398,
+    10810954399,
+    10810954400,
+    10810954401,
+    10810954402,
+    10810954403,
+    10810954404,
+    10810954385
+  ],
+  "tags": {
+    "branch": "Pioneer Highway",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 1163572116,
+  "center": {
+    "lat": -38.7223608,
+    "lon": 176.0807391
+  },
+  "nodes": [
+    10989293775,
+    10989298022,
+    10989293802,
+    10989293804,
+    10989293776,
+    10989293777,
+    10989298136,
+    10989298014,
+    10989298190,
+    10989298189,
+    10989298187,
+    10989298184,
+    10989298183,
+    10989298181,
+    10989293778,
+    10989298178,
+    10989293779,
+    10989298456,
+    10989293780,
+    10989298213,
+    10989293781,
+    10989298215,
+    10989298217,
+    10989293782,
+    10989298200,
+    10989298198,
+    10989298550,
+    10989298548,
+    10989298546,
+    10989298544,
+    10989298542,
+    10989298540,
+    10989298537,
+    10989293783,
+    10989298536,
+    10989293784,
+    10989293785,
+    10989293786,
+    10989293787,
+    10989298010,
+    10989293788,
+    10989293789,
+    10989293790,
+    10989293791,
+    10989293792,
+    10989293793,
+    10989293794,
+    10989293795,
+    10989293796,
+    10989293775
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "building:levels": "2",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 7 377 3423",
+    "shop": "supermarket",
+    "website": "https://countdown.co.nz/"
+  }
+},
+{
+  "type": "way",
+  "id": 1265659520,
+  "center": {
+    "lat": -43.5054501,
+    "lon": 172.6643767
+  },
+  "nodes": [
+    1574997555,
+    11756768304,
+    11756768311,
+    11756768312,
+    11756768313,
+    11756768317,
+    11756768319,
+    11756768321,
+    11756768323,
+    11756768305,
+    11756768326,
+    11756768332,
+    11756768306,
+    1574997555
+  ],
+  "tags": {
+    "addr:city": "Christchurch",
+    "addr:postcode": "8061",
+    "addr:street": "Marshland Road",
+    "area": "yes",
+    "barrier": "wall",
+    "branch": "The Palms",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "fax": "+64 3 385 4680",
+    "indoor": "room",
+    "level": "0",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "payment:american_express": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+64 3 375 7003",
+    "shop": "supermarket",
+    "website": "https://www.countdown.co.nz/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1298957568,
+  "center": {
+    "lat": -36.8898097,
+    "lon": 175.0103714
+  },
+  "nodes": [
+    6031400937,
+    12032793237,
+    4946859004,
+    4946859009,
+    4946859012,
+    4946859014,
+    6031400937
+  ],
+  "tags": {
+    "branch": "Beachlands",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "name": "Woolworths",
+    "official_name": "Beachlands Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 9 536 5176",
+    "shop": "supermarket",
+    "website": "https://www.woolworths.co.nz/store-finder/9177/beachlands/beachlands-countdown"
+  }
+},
+{
+  "type": "way",
+  "id": 1368013274,
+  "center": {
+    "lat": -41.3347816,
+    "lon": 173.2026320
+  },
+  "nodes": [
+    9025896922,
+    9025896920,
+    9025896919,
+    12669214473,
+    12669214475,
+    12669214474,
+    10050269964,
+    12669214472,
+    9025896918,
+    10050269957,
+    10050269962,
+    10050269959,
+    10050269958,
+    9025896929,
+    10050269956,
+    9025896917,
+    9025871716,
+    12715662137,
+    10050269952,
+    9025896935,
+    10050269955,
+    9025896923,
+    9025896922
+  ],
+  "tags": {
+    "branch": "Richmond",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "brand:wikipedia": "en:Countdown (supermarket)",
+    "building:part": "retail",
+    "diet:halal": "yes",
+    "diet:kosher": "yes",
+    "name": "Woolworths",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "+64 3 543 8306",
+    "shop": "supermarket",
+    "toilets": "yes",
+    "website": "https://www.woolworths.co.nz/store-finder/9040/richmond/richmond-countdown",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1383684880,
+  "center": {
+    "lat": -41.2986085,
+    "lon": 173.2410114
+  },
+  "nodes": [
+    12810959969,
+    12810959970,
+    12810959971,
+    12810959972,
+    12810959969
+  ],
+  "tags": {
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "note": "building location approximated",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 1395093235,
+  "center": {
+    "lat": -43.3763835,
+    "lon": 172.6494490
+  },
+  "nodes": [
+    12913518640,
+    13358655982,
+    13358655983,
+    13358655981,
+    13358655980,
+    13358657983,
+    13358657990,
+    12913518641,
+    13358657991,
+    13358655979,
+    13358655976,
+    13358655977,
+    13358655978,
+    13358657994,
+    12913518642,
+    13358655974,
+    13358655975,
+    13358655973,
+    13358655972,
+    12913518643,
+    13358681606,
+    13358655971,
+    13358655970,
+    13358655968,
+    13358655969,
+    12913518640
+  ],
+  "tags": {
+    "branch": "Waimakariri Junction",
+    "brand": "Woolworths",
+    "brand:wikidata": "Q5176845",
+    "building": "yes",
+    "name": "Woolworths",
+    "shop": "supermarket"
+  }
+}
+
+  ]
+}
