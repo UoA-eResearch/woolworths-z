@@ -74,6 +74,22 @@
     #findBtn:active:not(:disabled) { transform: scale(0.98); }
     #findBtn:disabled { background: #bbb; cursor: default; }
 
+    #locateBtn {
+      width: 100%;
+      padding: 11px;
+      background: #2980b9;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+    #locateBtn:hover:not(:disabled) { background: #1f6898; }
+    #locateBtn:active:not(:disabled) { transform: scale(0.98); }
+    #locateBtn:disabled { background: #bbb; cursor: default; }
+
     #status {
       font-size: 0.79rem;
       color: #888;
@@ -208,6 +224,7 @@
   </div>
 
   <button id="findBtn" onclick="findRoute()">📍 Find Nearest Store</button>
+  <button id="locateBtn" onclick="geolocateAndRoute()" aria-label="Use my current location to find nearest store">📡 Use My Location</button>
   <div id="status">Loading store locations…</div>
 
   <!-- Transport mode -->
@@ -395,6 +412,8 @@ let storeMarkers = [];       // Leaflet Marker[]  (parallel to stores[])
 let userMarker   = null;
 let routeLayer   = null;
 let currentDistM = null;     // route distance in metres (null = no result yet)
+let lastUserLat  = null;     // last known user latitude
+let lastUserLon  = null;     // last known user longitude
 let useDbzIcon   = false;
 
 // ═══════════════════════════════════════════════════════════════════
@@ -518,6 +537,94 @@ function handleIconToggle() {
 // Main: Find Route
 // ═══════════════════════════════════════════════════════════════════
 
+/**
+ * Core routing logic: given a user lat/lon and an optional display label,
+ * find the nearest store, draw the route, and show results.
+ */
+async function findRouteFromCoords(userLat, userLon, displayName) {
+  lastUserLat = userLat;
+  lastUserLon = userLon;
+
+  // Place user pin
+  if (userMarker) map.removeLayer(userMarker);
+  userMarker = L.marker([userLat, userLon], { icon: USER_ICON, zIndexOffset: 1000 })
+    .bindPopup(`<b>📍 Your Location</b>${displayName ? '<br><small>' + displayName + '</small>' : ''}`)
+    .addTo(map);
+
+  // ── 1. Sort stores by straight-line distance ──────────────────────
+  setStatus('Finding nearest store…');
+  const ranked = stores
+    .map((s, idx) => ({ s, idx, d: haversine(userLat, userLon, s.lat, s.lon) }))
+    .sort((a, b) => a.d - b.d);
+
+  // ── 2. Get road route to nearest store via OSRM ───────────────────
+  const transport = document.querySelector('input[name="transport"]:checked').value;
+  const profile   = OSRM_PROFILE[transport];
+
+  let routeDistM  = null;
+  let targetEntry = null;
+
+  for (let i = 0; i < Math.min(MAX_ROUTING_ATTEMPTS, ranked.length); i++) {
+    const entry = ranked[i];
+    setStatus(`Getting route to ${entry.s.name}…`);
+
+    try {
+      const url = `https://router.project-osrm.org/route/v1/${profile}/` +
+        `${userLon},${userLat};${entry.s.lon},${entry.s.lat}` +
+        `?overview=full&geometries=geojson`;
+
+      const rRes  = await fetch(url);
+      const rData = await rRes.json();
+
+      if (rData.code !== 'Ok' || !rData.routes?.length) continue;
+
+      const route = rData.routes[0];
+      routeDistM  = route.distance;
+      targetEntry = entry;
+
+      if (routeLayer) map.removeLayer(routeLayer);
+      routeLayer = L.geoJSON(route.geometry, {
+        style: { color: '#1b6e3e', weight: 5, opacity: 0.85, lineCap: 'round', lineJoin: 'round' }
+      }).addTo(map);
+
+      break;
+    } catch (e) {
+      console.warn(`OSRM attempt ${i} failed:`, e);
+    }
+  }
+
+  // ── 3. Fallback: straight-line if routing failed ──────────────────
+  if (routeDistM === null) {
+    targetEntry = ranked[0];
+    routeDistM  = targetEntry.d;
+
+    if (routeLayer) map.removeLayer(routeLayer);
+    routeLayer = L.polyline(
+      [[userLat, userLon], [targetEntry.s.lat, targetEntry.s.lon]],
+      { color: '#1b6e3e', weight: 3, dashArray: '7 7', opacity: 0.75 }
+    ).addTo(map);
+
+    setStatus('Routing unavailable — showing straight-line distance.', 'error');
+  } else {
+    setStatus('Route found!', 'success');
+  }
+
+  currentDistM = routeDistM;
+
+  // ── 4. Zoom to route and show results ─────────────────────────────
+  map.fitBounds(
+    L.latLngBounds([userLat, userLon], [targetEntry.s.lat, targetEntry.s.lon]).pad(0.3)
+  );
+
+  document.getElementById('storeName').textContent = targetEntry.s.name +
+    (routeDistM === targetEntry.d ? ' (straight-line)' : '');
+  document.getElementById('results').style.display = 'block';
+  updateDisplay();
+
+  // Open the store's tooltip/popup
+  storeMarkers[targetEntry.idx]?.openTooltip();
+}
+
 async function findRoute() {
   const address = document.getElementById('addressInput').value.trim();
   if (!address) {
@@ -533,7 +640,7 @@ async function findRoute() {
   btn.disabled = true;
 
   try {
-    // ── 1. Geocode address via Nominatim (NZ only) ──────────────────
+    // ── Geocode address via Nominatim (NZ only) ───────────────────────
     setStatus('Geocoding address…');
     const geoRes = await fetch(
       `https://nominatim.openstreetmap.org/search?` +
@@ -551,88 +658,70 @@ async function findRoute() {
     const userLat = parseFloat(geoData[0].lat);
     const userLon = parseFloat(geoData[0].lon);
 
-    // Place user pin
-    if (userMarker) map.removeLayer(userMarker);
-    userMarker = L.marker([userLat, userLon], { icon: USER_ICON, zIndexOffset: 1000 })
-      .bindPopup(`<b>📍 Your Location</b><br><small>${geoData[0].display_name}</small>`)
-      .addTo(map);
-
-    // ── 2. Sort stores by straight-line distance ────────────────────
-    setStatus('Finding nearest store…');
-    const ranked = stores
-      .map((s, idx) => ({ s, idx, d: haversine(userLat, userLon, s.lat, s.lon) }))
-      .sort((a, b) => a.d - b.d);
-
-    // ── 3. Get road route to nearest store via OSRM ─────────────────
-    const transport = document.querySelector('input[name="transport"]:checked').value;
-    const profile   = OSRM_PROFILE[transport];
-
-    let routeDistM  = null;
-    let targetEntry = null;
-
-    for (let i = 0; i < Math.min(MAX_ROUTING_ATTEMPTS, ranked.length); i++) {
-      const entry = ranked[i];
-      setStatus(`Getting route to ${entry.s.name}…`);
-
-      try {
-        const url = `https://router.project-osrm.org/route/v1/${profile}/` +
-          `${userLon},${userLat};${entry.s.lon},${entry.s.lat}` +
-          `?overview=full&geometries=geojson`;
-
-        const rRes  = await fetch(url);
-        const rData = await rRes.json();
-
-        if (rData.code !== 'Ok' || !rData.routes?.length) continue;
-
-        const route = rData.routes[0];
-        routeDistM  = route.distance;
-        targetEntry = entry;
-
-        if (routeLayer) map.removeLayer(routeLayer);
-        routeLayer = L.geoJSON(route.geometry, {
-          style: { color: '#1b6e3e', weight: 5, opacity: 0.85, lineCap: 'round', lineJoin: 'round' }
-        }).addTo(map);
-
-        break;
-      } catch (e) {
-        console.warn(`OSRM attempt ${i} failed:`, e);
-      }
-    }
-
-    // ── 4. Fallback: straight-line if routing failed ────────────────
-    if (routeDistM === null) {
-      targetEntry = ranked[0];
-      routeDistM  = targetEntry.d;
-
-      if (routeLayer) map.removeLayer(routeLayer);
-      routeLayer = L.polyline(
-        [[userLat, userLon], [targetEntry.s.lat, targetEntry.s.lon]],
-        { color: '#1b6e3e', weight: 3, dashArray: '7 7', opacity: 0.75 }
-      ).addTo(map);
-
-      setStatus('Routing unavailable — showing straight-line distance.', 'error');
-    } else {
-      setStatus('Route found!', 'success');
-    }
-
-    currentDistM = routeDistM;
-
-    // ── 5. Zoom to route and show results ───────────────────────────
-    map.fitBounds(
-      L.latLngBounds([userLat, userLon], [targetEntry.s.lat, targetEntry.s.lon]).pad(0.3)
-    );
-
-    document.getElementById('storeName').textContent = targetEntry.s.name +
-      (routeDistM === targetEntry.d ? ' (straight-line)' : '');
-    document.getElementById('results').style.display = 'block';
-    updateDisplay();
-
-    // Open the store's tooltip/popup
-    storeMarkers[targetEntry.idx]?.openTooltip();
+    await findRouteFromCoords(userLat, userLon, geoData[0].display_name);
 
   } catch (err) {
     console.error(err);
     setStatus('Error: ' + err.message, 'error');
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+async function geolocateAndRoute() {
+  if (!navigator.geolocation) {
+    setStatus('Geolocation is not supported by your browser.', 'error');
+    return;
+  }
+  if (!stores.length) {
+    setStatus('Store data still loading — please wait a moment.', 'error');
+    return;
+  }
+
+  const btn = document.getElementById('locateBtn');
+  btn.disabled = true;
+  setStatus('Getting your location…');
+
+  try {
+    const pos = await new Promise((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(resolve, reject, {
+        enableHighAccuracy: true,
+        timeout: 10000   // 10 s — enough for a GPS fix on most devices
+      });
+    });
+
+    const userLat = pos.coords.latitude;
+    const userLon = pos.coords.longitude;
+
+    // Reverse-geocode to fill the address input and get a display label
+    let displayName = null;
+    try {
+      const revRes = await fetch(
+        `https://nominatim.openstreetmap.org/reverse?lat=${userLat}&lon=${userLon}&format=json`,
+        { headers: { 'Accept-Language': 'en-NZ,en',
+                     'User-Agent': 'WoolworthsNZRouteFinder/1.0 (github.com/UoA-eResearch/woolworths-z)' } }
+      );
+      const revData = await revRes.json();
+      if (revData.display_name) {
+        displayName = revData.display_name;
+        document.getElementById('addressInput').value = displayName;
+      }
+    } catch (e) {
+      console.warn('Reverse geocoding failed:', e);
+    }
+
+    await findRouteFromCoords(userLat, userLon, displayName);
+
+  } catch (err) {
+    if (err.code === 1) {
+      setStatus('Location permission denied. Please enter your address manually.', 'error');
+    } else if (err.code === 2) {
+      setStatus('Location unavailable. Please enter your address manually.', 'error');
+    } else if (err.code === 3) {
+      setStatus('Location request timed out. Please enter your address manually.', 'error');
+    } else {
+      setStatus('Error: ' + err.message, 'error');
+    }
   } finally {
     btn.disabled = false;
   }
@@ -654,8 +743,12 @@ document.querySelectorAll('input[name="unit"]').forEach(el =>
 // Re-route when transport mode changes (if we already have a result)
 document.querySelectorAll('input[name="transport"]').forEach(el =>
   el.addEventListener('change', () => {
-    if (currentDistM !== null && document.getElementById('addressInput').value.trim()) {
-      findRoute();
+    if (currentDistM !== null) {
+      if (lastUserLat !== null && lastUserLon !== null) {
+        findRouteFromCoords(lastUserLat, lastUserLon);
+      } else if (document.getElementById('addressInput').value.trim()) {
+        findRoute();
+      }
     }
   })
 );
