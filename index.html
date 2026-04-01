@@ -246,6 +246,7 @@
       <label><input type="radio" name="unit" value="miles"><span>miles</span></label>
       <label><input type="radio" name="unit" value="furlongs"><span>furlongs</span></label>
       <label><input type="radio" name="unit" value="fpf"><span>fur/fortnight</span></label>
+      <label><input type="radio" name="unit" value="parsecs"><span>parsecs</span></label>
     </div>
   </div>
 
@@ -301,7 +302,8 @@ const UNIT_CFG = {
   km:      { factor: 1e-3,       label: 'km',  decimals: 2 },
   miles:   { factor: 6.21371e-4, label: 'mi',  decimals: 2 },
   furlongs:{ factor: 4.97097e-3, label: 'fur', decimals: 1 },
-  fpf:     { factor: 4.97097e-3, label: 'fur', decimals: 1 }
+  fpf:     { factor: 4.97097e-3, label: 'fur', decimals: 1 },
+  parsecs: { factor: 3.24078e-17, label: 'pc', decimals: 20 }
 };
 
 /** Average travel speeds in m/s. */
